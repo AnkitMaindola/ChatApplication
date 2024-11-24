@@ -1,28 +1,28 @@
 import mongoose from "mongoose";
 
-const userModal = mongoose.Schema({
-    fullName : {
-        required : true,
-        type : String
-    },
-    username : {
-        required : true,
-        type : String,
-        unique : true
-    },
-     password: {
-        required : true,
-        type : String
-    },
-    profilePhoto : {
-        required : true,
-        default : "",
-    },
-    gender : {
-        required : true,
-        type : String,
-        enum : ["male","female"]
-    }
-},{timeStamps : true})
+const userSchema = new mongoose.Schema({
+  fullName: {
+    type: String,
+    required: true
+  },
+  username: {
+    type: String,
+    required: true,
+    unique: true
+  },
+  password: {
+    type: String,
+    required: true
+  },
+  profilePhoto: {
+    type: String,   // Specify the type
+    default: ""     // Default value for an empty string
+  },
+  gender: {
+    type: String,
+    required: true,
+    enum: ["male", "female"]
+  }
+}, { timestamps: true });  // Correct typo here
 
-export const User = mongoose.model("User", userModal)
+export const User = mongoose.model("User", userSchema);

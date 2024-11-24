@@ -10,6 +10,6 @@ const conversationModel = new mongoose({
         ref : "Message"
     }],
 
-},{timeStamps : true})
+},{timestamps : true})
 
 export const Conversation = mongoose.model("Conversation", conversationModel)
