@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const conversationModel = new mongoose({
+const conversationModel = new mongoose.Schema({
     partcipants : [{
         type : mongoose.Schema.Types.ObjectId,
         ref : "User"
