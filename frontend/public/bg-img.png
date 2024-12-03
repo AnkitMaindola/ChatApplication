@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html xmlns:fb='https://www.facebook.com/2008/fbml' xmlns:og='https://opengraphprotocol.org/schema/' xmlns='https://www.w3.org/1999/xhtml' lang="en">
+<head>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+  </script>
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5BS5ZV');
+  </script>
+  <!-- End Google Tag Manager -->
+
+<meta http-equiv="Accept-CH" content="DPR">
+<meta charset="UTF-8">
+  <title>CSS Background Image: Quick Tutorial and 3 Automation Tips | Cloudinary</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+
+<link rel="preconnect" href="https://cloudinary-marketing-res.cloudinary.com">
+<link rel="preconnect" href="https://cloudinary-res.cloudinary.com">
+<link rel="preconnect" href="https://res.cloudinary.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://use.typekit.net">
+<link rel="preconnect" href="https://p.typekit.net">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://www.google-analytics.com">
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="preconnect" href="https://unpkg.com">
+
+
+
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+	<!-- This site is optimized with the Yoast SEO plugin v22.8 - https://yoast.com/wordpress/plugins/seo/ -->
+	<meta name="description" content="The background-image property in CSS allows you to set an image as the background for any HTML element" />
+	<link rel="canonical" href="https://cloudinary.com/guides/front-end-development/css-background-image-quick-tutorial-and-3-automation-tips" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="CSS Background Image: Quick Tutorial and 3 Automation Tips | Cloudinary" />
+	<meta property="og:description" content="The background-image property in CSS allows you to set an image as the background for any HTML element" />
+	<meta property="og:url" content="https://cloudinary.com/guides/front-end-development/css-background-image-quick-tutorial-and-3-automation-tips" />
+	<meta property="og:site_name" content="Cloudinary" />
+	<meta property="article:publisher" content="https://www.facebook.com/Cloudinary" />
+	<meta property="article:modified_time" content="2024-08-24T15:11:03+00:00" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@cloudinary" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://cloudinary.com/guides/front-end-development/css-background-image-quick-tutorial-and-3-automation-tips","url":"https://cloudinary.com/guides/front-end-development/css-background-image-quick-tutorial-and-3-automation-tips","name":"CSS Background Image: Quick Tutorial and 3 Automation Tips | Cloudinary","isPartOf":{"@id":"https://cloudinary.com/#website"},"datePublished":"2024-02-20T17:48:05+00:00","dateModified":"2024-08-24T15:11:03+00:00","description":"The background-image property in CSS allows you to set an image as the background for any HTML element","breadcrumb":{"@id":"https://cloudinary.com/guides/front-end-development/css-background-image-quick-tutorial-and-3-automation-tips#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://cloudinary.com/guides/front-end-development/css-background-image-quick-tutorial-and-3-automation-tips"]}]},{"@type":"BreadcrumbList","@id":"https://cloudinary.com/guides/front-end-development/css-background-image-quick-tutorial-and-3-automation-tips#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://cloudinary.com/"},{"@type":"ListItem","position":2,"name":"CSS Background Image: Quick Tutorial and 3 Automation Tips"}]},{"@type":"WebSite","@id":"https://cloudinary.com/#website","url":"https://cloudinary.com/","name":"Cloudinary","description":"Media Management Solution","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://cloudinary.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//use.typekit.net' />
+<link rel='dns-prefetch' href='//cloudinary-marketing-res.cloudinary.com' />
+<link rel='preconnect' href='https://cloudinary-marketing-res.cloudinary.com' />
+<style id='jetpack-sharing-buttons-style-inline-css'>
+.jetpack-sharing-buttons__services-list{display:flex;flex-direction:row;flex-wrap:wrap;gap:0;list-style-type:none;margin:5px;padding:0}.jetpack-sharing-buttons__services-list.has-small-icon-size{font-size:12px}.jetpack-sharing-buttons__services-list.has-normal-icon-size{font-size:16px}.jetpack-sharing-buttons__services-list.has-large-icon-size{font-size:24px}.jetpack-sharing-buttons__services-list.has-huge-icon-size{font-size:36px}@media print{.jetpack-sharing-buttons__services-list{display:none!important}}.editor-styles-wrapper .wp-block-jetpack-sharing-buttons{gap:0;padding-inline-start:0}ul.jetpack-sharing-buttons__services-list.has-background{padding:1.25em 2.375em}
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='preload' as='style' id='google-font-css' href='https://cloudinary.com/wp-content/themes/cld-2021/assets/fonts/inter/inter.css?ver=1.0.0' media='all' />
+<link rel='stylesheet' id='google-font-css' href='https://cloudinary.com/wp-content/themes/cld-2021/assets/fonts/inter/inter.css?ver=1.0.0' media="print" onload="this.media='all'" />
+<link rel='preload' as='style' id='adobe-font-css' href='https://use.typekit.net/pbl6vvd.css?ver=1.0.0' media='all' />
+<link rel='stylesheet' id='adobe-font-css' href='https://use.typekit.net/pbl6vvd.css?ver=1.0.0' media="print" onload="this.media='all'" />
+<link rel='preload' as='style' id='bootstrap-css' href='https://cloudinary.com/wp-content/themes/cld-2021/assets/css/bootstrap.min.css?ver=4.3.1' media='all' />
+<link rel='stylesheet' id='bootstrap-css' href='https://cloudinary.com/wp-content/themes/cld-2021/assets/css/bootstrap.min.css?ver=4.3.1' media="print" onload="this.media='all'" />
+<link rel='preload' as='style' id='owl-css-css' href='https://cloudinary.com/wp-content/themes/cld-2021/assets/css/owl.carousel.min.css?ver=2.2.0' media='all' />
+<link rel='stylesheet' id='owl-css-css' href='https://cloudinary.com/wp-content/themes/cld-2021/assets/css/owl.carousel.min.css?ver=2.2.0' media="print" onload="this.media='all'" />
+<link rel='preload' as='style' id='fancybox-css-css' href='https://cloudinary.com/wp-content/themes/cld-2021/assets/css/fancybox.min.css?ver=3.5.7' media='all' />
+<link rel='stylesheet' id='fancybox-css-css' href='https://cloudinary.com/wp-content/themes/cld-2021/assets/css/fancybox.min.css?ver=3.5.7' media="print" onload="this.media='all'" />
+<link rel='preload' as='style' id='common-css-css' href='https://cloudinary.com/wp-content/themes/cld-2021/common.css?ver=1.1.5' media='all' />
+<link rel='stylesheet' id='common-css-css' href='https://cloudinary.com/wp-content/themes/cld-2021/common.css?ver=1.1.5' media="print" onload="this.media='all'" />
+<link rel='preload' as='style' id='style-css' href='https://cloudinary.com/wp-content/themes/cld-2021/style.css?ver=1.0.1' media='all' />
+<link rel='stylesheet' id='style-css' href='https://cloudinary.com/wp-content/themes/cld-2021/style.css?ver=1.0.1' media="print" onload="this.media='all'" />
+<script type="text/javascript">
+/* <![CDATA[ */
+var CLDLB = {"image_optimization":"on","image_format":"auto","image_quality":"auto","enable_breakpoints":"on","breakpoints":"5","bytes_step":"20000","max_width":"","min_width":"50","image_freeform":"c_scale,w_auto,dpr_auto","image_preview":"https:\/\/res.cloudinary.com\/demo\/image\/upload\/w_600\/sample.jpg","video_player":"cld","video_controls":"on","video_loop":"off","video_autoplay_mode":"off","video_limit_bitrate":"off","video_bitrate":"500","video_optimization":"on","video_format":"auto","video_quality":"auto","video_freeform":"","video_preview":"","use_lazy_load":"on","lazy_threshold":"100px","lazy_custom_color":"rgba(153,153,153,0.5)","lazy_animate":"on","lazy_placeholder":"blur","lazyload_preview":"https:\/\/res.cloudinary.com\/demo\/image\/upload\/w_600\/sample.jpg","pixel_step":200,"dpr":"2X","breakpoints_preview":"https:\/\/res.cloudinary.com\/demo\/image\/upload\/w_600\/sample.jpg","placeholder":"e_blur:2000,q_1,f_auto","base_url":"https:\/\/cloudinary-marketing-res.cloudinary.com"};!function(e){var t={};function i(n){if(t[n])return t[n].exports;var r=t[n]={i:n,l:!1,exports:{}};return e[n].call(r.exports,r,r.exports,i),r.l=!0,r.exports}i.m=e,i.c=t,i.d=function(e,t,n){i.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:n})},i.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.t=function(e,t){if(1&t&&(e=i(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var n=Object.create(null);if(i.r(n),Object.defineProperty(n,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var r in e)i.d(n,r,function(t){return e[t]}.bind(null,r));return n},i.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return i.d(t,"a",t),t},i.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},i.p="",i(i.s=0)}([function(e,t){var i={deviceDensity:window.devicePixelRatio?window.devicePixelRatio:"auto",density:null,config:CLDLB||{},lazyThreshold:0,enabled:!1,sizeBands:[],iObserver:null,pObserver:null,rObserver:null,aboveFold:!0,bind:function(e){var t=this;e.CLDbound=!0,this.enabled||this._init();var i=e.dataset.size.split(" ");e.originalWidth=i[0],e.originalHeight=i[1],this.pObserver?(this.aboveFold&&this.inInitialView(e)?this.buildImage(e):(this.pObserver.observe(e),this.iObserver.observe(e)),e.addEventListener("error",(function(i){e.src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="rgba(0,0,0,0.1)"/><text x="50%" y="50%" fill="red" text-anchor="middle" dominant-baseline="middle">%26%23x26A0%3B︎</text></svg>',t.rObserver.unobserve(e)}))):this.setupFallback(e)},buildImage:function(e){e.dataset.srcset?(e.cld_loaded=!0,e.srcset=e.dataset.srcset):(e.src=this.getSizeURL(e),e.dataset.responsive&&this.rObserver.observe(e))},inInitialView:function(e){var t=e.getBoundingClientRect();return this.aboveFold=t.top<window.innerHeight+this.lazyThreshold,this.aboveFold},setupFallback:function(e){var t=this,i=[];this.sizeBands.forEach((function(n){if(n<=e.originalWidth){var r=t.getSizeURL(e,n,!0)+" ".concat(n,"w");-1===i.indexOf(r)&&i.push(r)}})),e.srcset=i.join(","),e.sizes="(max-width: ".concat(e.originalWidth,"px) 100vw, ").concat(e.originalWidth,"px")},_init:function(){this.enabled=!0,this._calcThreshold(),this._getDensity();for(var e=parseInt(this.config.max_width),t=parseInt(this.config.min_width),i=parseInt(this.config.pixel_step);e-i>=t;)e-=i,this.sizeBands.push(e);"undefined"!=typeof IntersectionObserver&&this._setupObservers(),this.enabled=!0},_setupObservers:function(){var e=this,t={rootMargin:this.lazyThreshold+"px 0px "+this.lazyThreshold+"px 0px"},i={rootMargin:2*this.lazyThreshold+"px 0px "+2*this.lazyThreshold+"px 0px"};this.rObserver=new ResizeObserver((function(t,i){t.forEach((function(t){t.target.cld_loaded&&t.contentRect.width>=t.target.cld_loaded&&(t.target.src=e.getSizeURL(t.target))}))})),this.iObserver=new IntersectionObserver((function(t,i){t.forEach((function(t){t.isIntersecting&&(e.buildImage(t.target),i.unobserve(t.target))}))}),t),this.pObserver=new IntersectionObserver((function(t,i){t.forEach((function(t){t.isIntersecting&&(t.intersectionRatio<.5&&(t.target.src=e.getPlaceholderURL(t.target)),i.unobserve(t.target))}))}),i)},_calcThreshold:function(){var e=this.config.lazy_threshold.replace(/[^0-9]/g,""),t=0;switch(this.config.lazy_threshold.replace(/[0-9]/g,"").toLowerCase()){case"em":t=parseFloat(getComputedStyle(document.body).fontSize)*e;break;case"rem":t=parseFloat(getComputedStyle(document.documentElement).fontSize)*e;break;case"vh":t=window.innerHeight/e*100;break;default:t=e}this.lazyThreshold=parseInt(t,10)},_getDensity:function(){var e=this.config.dpr?this.config.dpr.replace("X",""):"off";if("off"===e)return this.density=1,1;var t=this.deviceDensity;"max"!==e&&"auto"!==t&&(e=parseFloat(e),t=t>Math.ceil(e)?e:t),this.density=t},scaleWidth:function(e,t){var i=parseInt(this.config.max_width);if(!t)for(t=e.width;-1===this.sizeBands.indexOf(t)&&t<i;)t++;return t>i&&(t=i),e.originalWidth<t&&(t=e.originalWidth),t},scaleSize:function(e,t,i){var n=(e.originalWidth/e.originalHeight).toFixed(3),r=(e.width/e.height).toFixed(3),s=this.scaleWidth(e,t),o=[];e.width!==e.originalWidth&&o.push(n===r?"c_scale":"c_fill,g_auto");var a=Math.round(s/r);return o.push("w_"+s),o.push("h_"+a),i&&1!==this.density&&o.push("dpr_"+this.density),e.cld_loaded=s,{transformation:o.join(","),nameExtension:s+"x"+a}},getSizeURL:function(e,t){var i=this.scaleSize(e,t,!0);return[this.config.base_url,"image",e.dataset.delivery,"upload"===e.dataset.delivery?i.transformation:"",e.dataset.transformations,"v"+e.dataset.version,e.dataset.publicId+"?_i=AA"].filter(this.empty).join("/")},getPlaceholderURL:function(e){return e.cld_placehold=!0,this.scaleSize(e,null,!1),[this.config.base_url,"image",e.dataset.delivery,this.config.placeholder,e.dataset.publicId].filter(this.empty).join("/")},empty:function(e){return 0!==e.length}};window.CLDBind=function(e){e.CLDbound||i.bind(e)}}]);
+/* ]]> */
+</script>
+<script type="text/javascript" defer src="https://cloudinary.com/wp-content/themes/cld-2021/assets/js/jquery-3.4.1.min.js?ver=3.4.1" id="jquery-js"></script>
+
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><style type="text/css" id="sns_global_styles">@media(max-width: 655px){
+  footer.site-footer .widgets{
+  max-width: 390px;
+  margin: auto auto;
+}
+}
+
+.no-results, .no-posts-found {display:none;}
+
+
+@media (min-width: 992px) {
+  section.slider-mod.standard {height: 630px;}
+}
+
+.mktoForm .mktoCaptchaDisclaimer {text-align: center; color: #FFFFFF;}
+
+#header .header-frame .navbar-default .navbar-collapse .navbar-nav > li:nth-child(1) .dropdown-menu .inner .dropdown-column:nth-child(2) > .link-list {padding-top:0;}
+.dropdown-menu .inner .dropdown-column .link-list .link-list-item .nav-icon {flex: 1 0 34px !important; max-width: 34px !important;}
+.dropdown-menu .inner .dropdown-column .link-list .link-list-item.has-description a:hover .chevron {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 320 512'%3E%3Cpath d='M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z' fill='%233F5FFF'/%3E%3C/svg%3E") !important;}
+
+#menu-item-27967 .heading .dropdown-header {
+    margin-bottom: -5px;
+    margin-top: 33px;
+}
+
+@media (min-width: 1070px){
+  #header .header-frame .navbar-default .navbar-collapse .navbar-nav > li:nth-child(2) .dropdown-menu .inner .dropdown-column {
+    flex: 1 0 33.33%!important;
+    max-width: calc(33.33% - 20px)!important;
+  } 
+}
+
+</style><link rel='preconnect' href='//connect.facebook.net' />
+<link rel='dns-prefetch' href='//connect.facebook.net' />
+<meta name="google-site-verification" content="mMjpNjz1ps4PeQV_LLB_GiQ4KRNa0pDgTNO9zTKtK9g" />
+<link rel="preconnect" href="//use.typekit.net" crossorigin>
+<link rel="preconnect" href="//p.typekit.net" crossorigin>
+<script src="https://cdn.debugbear.com/EHCenyitCAgM.js" async></script><link rel="icon" href="https://cloudinary-marketing-res.cloudinary.com/images/w_32,h_32,c_fill/c_scale,w_auto,dpr_auto/f_auto,q_auto/v1649718289/website_2021/favicon-32x32-1_130212d736/favicon-32x32-1_130212d736-png?_i=AA?w=32" sizes="32x32" />
+<link rel="icon" href="https://cloudinary-marketing-res.cloudinary.com/images/w_32,h_32,c_fill/c_scale,w_auto,dpr_auto/f_auto,q_auto/v1649718289/website_2021/favicon-32x32-1_130212d736/favicon-32x32-1_130212d736-png?_i=AA?w=192" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://cloudinary-marketing-res.cloudinary.com/images/w_32,h_32,c_fill/c_scale,w_auto,dpr_auto/f_auto,q_auto/v1649718289/website_2021/favicon-32x32-1_130212d736/favicon-32x32-1_130212d736-png?_i=AA?w=180" />
+<meta name="msapplication-TileImage" content="https://cloudinary-marketing-res.cloudinary.com/images/w_32,h_32,c_fill/c_scale,w_auto,dpr_auto/f_auto,q_auto/v1649718289/website_2021/favicon-32x32-1_130212d736/favicon-32x32-1_130212d736-png?_i=AA?w=270" />
+
+
+<link href='https://cloudinary-res.cloudinary.com/image/upload/f_auto,q_auto/c_scale,w_196/v1597183771/website/cloudinary_web_favicon.png' rel='icon' sizes='196x196' type='image/png'>
+<link href='https://cloudinary-res.cloudinary.com/image/upload/f_auto,q_auto/c_scale,w_192/v1597183771/website/cloudinary_web_favicon.png' rel='icon' sizes='192x192' type='image/png'>
+<link href='https://cloudinary-res.cloudinary.com/image/upload/f_auto,q_auto/c_scale,w_180/v1597183771/website/cloudinary_web_favicon.png' rel='icon' sizes='180x180' type='image/png'>
+<link href='https://cloudinary-res.cloudinary.com/image/upload/f_auto,q_auto/c_scale,w_167/v1597183771/website/cloudinary_web_favicon.png' rel='icon' sizes='167x167' type='image/png'>
+<link href='https://cloudinary-res.cloudinary.com/image/upload/f_auto,q_auto/c_scale,w_152/v1597183771/website/cloudinary_web_favicon.png' rel='icon' sizes='152x152' type='image/png'>
+<link href='https://cloudinary-res.cloudinary.com/image/upload/f_auto,q_auto/c_scale,w_128/v1597183771/website/cloudinary_web_favicon.png' rel='icon' sizes='128x128' type='image/png'>
+<link href='https://cloudinary-res.cloudinary.com/image/upload/f_auto,q_auto/c_scale,w_32/v1597183771/website/cloudinary_web_favicon.png' rel='icon' sizes='32x32' type='image/png'>
+
+<meta content='D43D2F9F3AF50B5309599A29249A76F3' name='msvalidate.01'>
+<meta content='#2b5797' name='msapplication-TileColor'>
+<meta content='https://cloudinary-res.cloudinary.com/image/upload/f_auto,q_auto/c_scale,w_144/v1597183771/website/cloudinary_web_favicon.png' name='msapplication-TileImage'>
+
+<script>
+document.createElement( "picture" );
+</script>
+
+      <meta property="og:image" content="https://res.cloudinary.com/cloudinary-marketing/image/upload/f_auto,q_auto/v1597642219/creative_source/Brand/Social%20Images/Cld_SocShare_Card_FB_2020.png" />
+    <meta property="og:image:secure_url" content="https://res.cloudinary.com/cloudinary-marketing/image/upload/f_auto,q_auto/v1597642219/creative_source/Brand/Social%20Images/Cld_SocShare_Card_FB_2020.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+  
+
+</head>
+
+<body class="guides-template-default single single-guides postid-32519">
+
+
+<div id="wrapper" class="site ">
+          <header id='header'>
+    <div id="header-inner">
+      <div class='header-frame'>
+        <nav class='navbar navbar-default'>
+  <div class='container-fluid'>
+    <div class='navbar-header'>
+      <div class='logo'>
+        <a href='/'>
+          <svg id="cld-main-logo" style="height: 30px; width: 160px; margin-bottom: -10px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 96.77"><title>Cloudinary Logo</title><defs><style>.cls-1{fill:#3448c5;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M160.53,30.41a17.14,17.14,0,0,1,13.56,6.7.69.69,0,0,0,1,.11l5.71-4.55a.71.71,0,0,0,.11-1,26,26,0,0,0-20.61-10.13c-14.91,0-27,12.85-27,28.65s12.13,28.65,27,28.65A25.85,25.85,0,0,0,180.9,68.72a.69.69,0,0,0-.12-1l-5.7-4.5a.71.71,0,0,0-1,.11A17.26,17.26,0,0,1,160.53,70c-10.19,0-18.16-8.7-18.16-19.79S150.34,30.41,160.53,30.41Z"/><path class="cls-1" d="M188.27,19.91h7.16a.71.71,0,0,1,.71.71V77.4a.7.7,0,0,1-.7.7h-7.16a.71.71,0,0,1-.71-.71V20.62A.7.7,0,0,1,188.27,19.91Z"/><path class="cls-1" d="M220.54,39.55c-9.49,0-19.09,6.72-19.09,19.57,0,11.29,8.21,19.81,19.09,19.81s19.17-8.52,19.17-19.81S231.47,39.55,220.54,39.55Zm10.53,19.57c0,6.52-4.53,11.44-10.53,11.44S210.1,65.64,210.1,59.12s4.49-11.2,10.44-11.2S231.07,52.73,231.07,59.12Z"/><path class="cls-1" d="M278.3,40.37h-7.16a.7.7,0,0,0-.71.7v19c0,7.42-5.12,10.05-9.51,10.05-3.88,0-7.79-2.93-7.79-9.48V41.07a.7.7,0,0,0-.71-.7h-7.16a.7.7,0,0,0-.7.7v20.5c0,11.25,5.09,17.44,14.34,17.44,3.36,0,8.8-1.93,10.84-6.19l.69.14V77.4a.71.71,0,0,0,.71.71h7.16a.71.71,0,0,0,.71-.71V41.07A.7.7,0,0,0,278.3,40.37Z"/><path class="cls-1" d="M322.27,19.91H315.1a.7.7,0,0,0-.7.71V46l-.44-.7c-2.18-3.51-6.87-5.78-11.95-5.78-8.76,0-17.62,6.75-17.62,19.65,0,11.25,7.61,19.73,17.69,19.73,3.84,0,9.25-1.54,11.88-5.86l.44-.72V77.4a.7.7,0,0,0,.7.71h7.17a.7.7,0,0,0,.7-.71V20.62A.7.7,0,0,0,322.27,19.91Zm-8,39.21a11,11,0,0,1-10.75,11.36c-5.86,0-10.45-5-10.45-11.36s4.59-11.2,10.45-11.2A11,11,0,0,1,314.24,59.12Z"/><path class="cls-1" d="M333,40.37h7.16a.7.7,0,0,1,.7.7V77.4a.7.7,0,0,1-.7.7H333a.71.71,0,0,1-.71-.71V41.07A.71.71,0,0,1,333,40.37Z"/><path class="cls-1" d="M336.61,21.06a5.57,5.57,0,0,0-5.69,5.57,5.64,5.64,0,0,0,5.69,5.58,5.54,5.54,0,0,0,5.61-5.58A5.48,5.48,0,0,0,336.61,21.06Z"/><path class="cls-1" d="M370.35,39.55c-3.14,0-8.72,1.69-10.85,6.19l-.69-.14V41.07a.7.7,0,0,0-.71-.7h-7.16a.7.7,0,0,0-.7.7V77.4a.7.7,0,0,0,.7.71h7.16a.71.71,0,0,0,.71-.71v-19c0-7.36,5.12-10,9.51-10,3.88,0,7.79,2.91,7.79,9.4V77.4a.71.71,0,0,0,.71.71H384a.71.71,0,0,0,.71-.71V56.91C384.69,45.72,379.59,39.55,370.35,39.55Z"/><path class="cls-1" d="M427.48,40.37h-7.16a.7.7,0,0,0-.71.7v5l-.43-.7c-2.19-3.51-6.88-5.78-12-5.78-8.75,0-17.62,6.75-17.62,19.65,0,11.25,7.61,19.73,17.7,19.73,3.83,0,9.24-1.54,11.88-5.86l.43-.72V77.4a.71.71,0,0,0,.71.71h7.16a.7.7,0,0,0,.7-.71V41.07A.7.7,0,0,0,427.48,40.37Zm-8,18.75A11,11,0,0,1,408.7,70.48c-5.86,0-10.44-5-10.44-11.36s4.58-11.2,10.44-11.2A11,11,0,0,1,419.46,59.12Z"/><path class="cls-1" d="M460.15,40.5a13.66,13.66,0,0,0-5.14-1c-4.76,0-8.22,2.85-10,8.25l-.64-.09V41.07a.7.7,0,0,0-.71-.7h-7.16a.7.7,0,0,0-.71.7V77.4a.71.71,0,0,0,.71.71h7.24a.7.7,0,0,0,.7-.71V65c0-14.8,5.91-17,9.44-17a11,11,0,0,1,4.33.9.72.72,0,0,0,.61,0,.7.7,0,0,0,.36-.48l1.42-7.11A.71.71,0,0,0,460.15,40.5Z"/><path class="cls-1" d="M499.88,40.68a.69.69,0,0,0-.59-.31h-7.71a.72.72,0,0,0-.66.45L481.59,65l-9.42-24.18a.72.72,0,0,0-.66-.45h-7.86a.69.69,0,0,0-.58.31.7.7,0,0,0-.07.66l14,34.38-7.73,20.09a.71.71,0,0,0,.66,1h7.5a.69.69,0,0,0,.65-.45l21.86-55A.69.69,0,0,0,499.88,40.68Z"/><path class="cls-1" d="M97.91,28.11A40.38,40.38,0,0,0,59.73,0,39.62,39.62,0,0,0,24.6,20.87a29.88,29.88,0,0,0-7.21,56.56l.75.34h.05v-8.5a22.29,22.29,0,0,1,9.29-41.16l2.1-.22L30.5,26A32.15,32.15,0,0,1,59.73,7.57a32.7,32.7,0,0,1,31.55,25L92,35.43l3,0a18.53,18.53,0,0,1,18.15,18.46c0,7.05-4.07,12.82-11,15.74v8.06l.5-.16c11.14-3.65,18.06-12.71,18.06-23.64A26.19,26.19,0,0,0,97.91,28.11Z"/><path class="cls-1" d="M45.07,76.79l1.66,1.66a.33.33,0,0,1-.23.56H33.4a6,6,0,0,1-6-6V47.57a.33.33,0,0,0-.33-.33H24.27a.33.33,0,0,1-.24-.56L35.15,35.56a.33.33,0,0,1,.47,0L46.73,46.68a.33.33,0,0,1-.23.56H43.66a.34.34,0,0,0-.34.33v25A6,6,0,0,0,45.07,76.79Z"/><path class="cls-1" d="M69.64,76.79l1.67,1.66a.33.33,0,0,1-.24.56H58a6,6,0,0,1-6-6V54a.34.34,0,0,0-.33-.34H48.84a.33.33,0,0,1-.23-.56L59.72,42a.33.33,0,0,1,.47,0L71.31,53.08a.33.33,0,0,1-.24.56H68.23a.34.34,0,0,0-.33.34V72.57A6,6,0,0,0,69.64,76.79Z"/><path class="cls-1" d="M94.22,76.79l1.66,1.66a.33.33,0,0,1-.23.56H82.54a6,6,0,0,1-6-6V60.38a.33.33,0,0,0-.33-.33H73.41a.33.33,0,0,1-.23-.57L84.3,48.37a.32.32,0,0,1,.46,0L95.88,59.48a.33.33,0,0,1-.23.57H92.8a.33.33,0,0,0-.33.33V72.57A6,6,0,0,0,94.22,76.79Z"/></g></g></svg>
+        </a>
+      </div>
+      <button class='navbar-toggle collapsed' type='button' aria-label="navigation hamburger">
+        <span class="navbar-toggler-icon">
+					<span id="nav-icon">
+					  <span></span>
+					  <span></span>
+					  <span></span>
+					  <span></span>
+					</span>
+				</span>
+      </button>
+    </div>
+
+    <div class='collapse navbar-collapse' id='site-main-nav' aria-expanded='false'>
+      <div class='header-section'>
+        <div id="mainMenu" class="menu-main-menu-2023-container"><ul id="menu-main-menu-2023" class="navbar-nav"><li id="menu-item-27967" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-has-children menu-item-27967 nav-item dropdown first-level"><a href="#" class="nav-link dropdown-toggle">Platform<span class="sub"></span></a>
+<div class="dropdown-menu">
+
+<div class="container-fluid inner depth-0">
+<div class="dropdown-column has-children"><div class="dropdown-header">Products<span class="sub"></span></div><ul class = 'link-list'><li class = " link-list-item has-description"><div class="nav-icon"><img width="78" height="78" src="data:image/svg+xml;utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;78&quot; height=&quot;78&quot;&gt;&lt;rect width=&quot;100%&quot; height=&quot;100%&quot;&gt;&lt;animate attributeName=&quot;fill&quot; values=&quot;rgba(153,153,153,0.5);rgba(153,153,153,0.1);rgba(153,153,153,0.5)&quot; dur=&quot;2s&quot; repeatCount=&quot;indefinite&quot; /&gt;&lt;/rect&gt;&lt;/svg&gt;" loading="lazy" alt="Programmable Media Icon" class="icon-standard style-svg wp-image-28729" data-public-id="PM_Icon_for_web.png" data-format="png" data-transformations="c_scale,w_auto,dpr_auto/f_auto,q_auto" data-version="1693359054" data-responsive="1" data-size="78 78" data-delivery="upload" onload="CLDBind(this)" /></div><a href="/products/programmable_media">Programmable Media<span class="sub">APIs to automate image and video lifecycles</span></a></li><li class = " link-list-item has-description"><div class="nav-icon"><img width="37" height="37" src="data:image/svg+xml;utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;37&quot; height=&quot;37&quot;&gt;&lt;rect width=&quot;100%&quot; height=&quot;100%&quot;&gt;&lt;animate attributeName=&quot;fill&quot; values=&quot;rgba(153,153,153,0.5);rgba(153,153,153,0.1);rgba(153,153,153,0.5)&quot; dur=&quot;2s&quot; repeatCount=&quot;indefinite&quot; /&gt;&lt;/rect&gt;&lt;/svg&gt;" loading="lazy" alt="Assets Icon" class="icon-standard style-svg wp-image-31923" data-public-id="assets-icon-white.png" data-format="png" data-transformations="c_scale,w_auto,dpr_auto/f_auto,q_auto" data-version="1706285230" data-responsive="1" data-size="37 37" data-delivery="upload" onload="CLDBind(this)" /></div><a href="/products/digital_asset_management">Assets<span class="sub">Digital Asset Management</span></a></li><li class = " link-list-item has-description"><div class="nav-icon"><img width="30" height="30" src="data:image/svg+xml;utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;30&quot; height=&quot;30&quot;&gt;&lt;rect width=&quot;100%&quot; height=&quot;100%&quot;&gt;&lt;animate attributeName=&quot;fill&quot; values=&quot;rgba(153,153,153,0.5);rgba(153,153,153,0.1);rgba(153,153,153,0.5)&quot; dur=&quot;2s&quot; repeatCount=&quot;indefinite&quot; /&gt;&lt;/rect&gt;&lt;/svg&gt;" loading="lazy" alt="MediaFlows Icon" class="icon-standard style-svg wp-image-28482" data-public-id="website_2021/media-flow-nav.png" data-format="png" data-transformations="c_scale,w_auto,dpr_auto/f_auto,q_auto" data-version="1691092859" data-responsive="1" data-size="30 30" data-delivery="upload" onload="CLDBind(this)" /></div><a target="_blank" href="https://home.mediaflows.cloudinary.com/?utm_source=website&#038;utm_medium=platform-nagivation">MediaFlows<span class="sub">Low-code workflow automation for image &#038; video</span></a></li></ul></div><div class="dropdown-column has-children"><div class="dropdown-header">APIS<span class="sub"></span></div><ul class = 'link-list'><li class = " link-list-item has-description"><div class="nav-icon"><img width="72" height="66" src="data:image/svg+xml;utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;72&quot; height=&quot;66&quot;&gt;&lt;rect width=&quot;100%&quot; height=&quot;100%&quot;&gt;&lt;animate attributeName=&quot;fill&quot; values=&quot;rgba(153,153,153,0.5);rgba(153,153,153,0.1);rgba(153,153,153,0.5)&quot; dur=&quot;2s&quot; repeatCount=&quot;indefinite&quot; /&gt;&lt;/rect&gt;&lt;/svg&gt;" loading="lazy" alt="Video API Icon" class="icon-standard style-svg wp-image-28609" data-public-id="video-api-icon-new.png" data-format="png" data-transformations="c_scale,w_auto,dpr_auto/f_auto,q_auto" data-version="1691439952" data-responsive="1" data-size="72 66" data-delivery="upload" onload="CLDBind(this)" /></div><a href="/video_api">Video API<span class="sub">Add video to your website or app in minutes</span></a></li><li class = " link-list-item has-description"><div class="nav-icon"><img width="75" height="69" src="data:image/svg+xml;utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;75&quot; height=&quot;69&quot;&gt;&lt;rect width=&quot;100%&quot; height=&quot;100%&quot;&gt;&lt;animate attributeName=&quot;fill&quot; values=&quot;rgba(153,153,153,0.5);rgba(153,153,153,0.1);rgba(153,153,153,0.5)&quot; dur=&quot;2s&quot; repeatCount=&quot;indefinite&quot; /&gt;&lt;/rect&gt;&lt;/svg&gt;" loading="lazy" alt="Cloudinary AI Icon" class="icon-standard style-svg wp-image-28610" data-public-id="cld-ai-new.png" data-format="png" data-transformations="c_scale,w_auto,dpr_auto/f_auto,q_auto" data-version="1691440462" data-responsive="1" data-size="75 69" data-delivery="upload" onload="CLDBind(this)" /></div><a href="/products/cloudinary_ai">Cloudinary AI<span class="sub">Generative AI and Machine Learning to speed creativity</span></a></li><li class = " link-list-item has-description"><div class="nav-icon"><img width="72" height="66" src="data:image/svg+xml;utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;72&quot; height=&quot;66&quot;&gt;&lt;rect width=&quot;100%&quot; height=&quot;100%&quot;&gt;&lt;animate attributeName=&quot;fill&quot; values=&quot;rgba(153,153,153,0.5);rgba(153,153,153,0.1);rgba(153,153,153,0.5)&quot; dur=&quot;2s&quot; repeatCount=&quot;indefinite&quot; /&gt;&lt;/rect&gt;&lt;/svg&gt;" loading="lazy" alt="Image API Icon" class="icon-standard style-svg wp-image-35991" data-public-id="image-api-icon-new-edge.png" data-format="png" data-transformations="c_scale,w_auto,dpr_auto/f_auto,q_auto" data-version="1713552989" data-responsive="1" data-size="72 66" data-delivery="upload" onload="CLDBind(this)" /></div><a href="https://cloudinary.com/image-api">Image API<span class="sub">Chain image effects at a scale improving performance</span></a></li></ul></div><div class="dropdown-column has-children"><div class="dropdown-header">BETA<span class="sub"></span></div><ul class = 'link-list'><li class = " link-list-item has-description"><div class="nav-icon"><img width="200" height="200" src="data:image/svg+xml;utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;&lt;rect width=&quot;100%&quot; height=&quot;100%&quot;&gt;&lt;animate attributeName=&quot;fill&quot; values=&quot;rgba(153,153,153,0.5);rgba(153,153,153,0.1);rgba(153,153,153,0.5)&quot; dur=&quot;2s&quot; repeatCount=&quot;indefinite&quot; /&gt;&lt;/rect&gt;&lt;/svg&gt;" loading="lazy" alt="FinalTouch Icon" class="icon-standard style-svg wp-image-32085" data-public-id="final-touch-icon-200.png" data-format="png" data-transformations="c_scale,w_auto,dpr_auto/f_auto,q_auto" data-version="1706755782" data-responsive="1" data-size="200 200" data-delivery="upload" onload="CLDBind(this)" /></div><a target="_blank" href="https://final-tou.ch/">FinalTouch<span class="sub">Create quality product photos with Gen-AI</span></a></li><li class = " link-list-item has-description"><div class="nav-icon"><img width="24" height="24" src="data:image/svg+xml;utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;rect width=&quot;100%&quot; height=&quot;100%&quot;&gt;&lt;animate attributeName=&quot;fill&quot; values=&quot;rgba(153,153,153,0.5);rgba(153,153,153,0.1);rgba(153,153,153,0.5)&quot; dur=&quot;2s&quot; repeatCount=&quot;indefinite&quot; /&gt;&lt;/rect&gt;&lt;/svg&gt;" loading="lazy" alt="Dimensions Icon" class="icon-standard style-svg wp-image-32399" data-public-id="dimensions-icon.png" data-format="png" data-transformations="c_scale,w_auto,dpr_auto/f_auto,q_auto" data-version="1708013072" data-responsive="1" data-size="24 24" data-delivery="upload" onload="CLDBind(this)" /></div><a target="_blank" href="https://www.welcome.dimensions.cloudinary.com/?utm_source=cloudinary&#038;utm_medium=console&#038;utm_campaign=product-page">Dimensions<span class="sub">3D models transformed into stunning creatives</span></a></li><li class = " link-list-item heading"><div class="dropdown-header">EXPLORE<span class="sub"></span></div></li><li class = " link-list-item"><a href="https://cloudinary.com/demos">Demos<span class="sub"></span></a></li><li class = " link-list-item"><a href="https://cloudinary.com/integrations">Integrations<span class="sub"></span></a></li></ul></div></div>
+</div>
+</li>
+<li id="menu-item-27976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-has-children menu-item-27976 nav-item dropdown first-level"><a href="#" class="nav-link dropdown-toggle">Solutions<span class="sub"></span></a>
+<div class="dropdown-menu">
+
+<div class="container-fluid inner depth-0">
+<div class="dropdown-column"><div class="dropdown-header">By Use Case<span class="sub"></span></div><div class="description"><ul>
+<li><a href="/solutions/composable-architecture">Composable Architecture</a></li>
+<li><a href="/products/digital_asset_management/dam-video">DAM for Video</a></li>
+<li><a href="/solutions/headless">Headless DAM</a></li>
+<li><a href="/solutions/performance_optimization">Performance Optimization</a></li>
+<li><a href="/solutions/user-generated-content">UGC</a></li>
+<li><a href="/solutions/video">Video Experiences</a></li>
+</ul>
+</div></div><div class="dropdown-column"><div class="dropdown-header">By Function<span class="sub"></span></div><div class="description"><ul>
+<li><a href="/solutions/e-commerce-teams">E-commerce</a></li>
+<li><a href="/solutions/cx-professionals">CX Professionals</a></li>
+<li><a href="/developers">Developers</a></li>
+<li><a href="/solutions/it-teams">IT Teams</a></li>
+<li><a href="/solutions/marketing-teams">Marketers</a></li>
+<li><a href="/solutions/product-and-engineering-teams">Product and Engineering</a></li>
+</ul>
+</div></div><div class="dropdown-column"><div class="dropdown-header">By Industry<span class="sub"></span></div><div class="description"><ul>
+<li><a href="/solutions/industries/media_entertainment">Media &amp; Entertainment</a></li>
+<li><a href="/solutions/industries/cloudinary-for-nonprofits">Non-Profits</a></li>
+<li><a href="/solutions/retail">Retail</a></li>
+<li><a href="/solutions/industries/travel_hospitality">Travel &amp; Hospitality</a></li>
+</ul>
+</div></div></div>
+</div>
+</li>
+<li id="menu-item-27979" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27979 nav-item first-level"><a href="/developers" class="nav-link">Developers<span class="sub"></span></a></li>
+<li id="menu-item-27980" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-has-children menu-item-27980 nav-item dropdown first-level"><a href="#" class="nav-link dropdown-toggle">Resources<span class="sub"></span></a>
+<div class="dropdown-menu">
+
+<div class="container-fluid inner depth-0">
+<div class="dropdown-column"><div class="dropdown-header">Learn<span class="sub"></span></div><div class="description"><ul>
+<li><a href="/blog/">Blog</a></li>
+<li><a href="/demos">Demos</a></li>
+<li><a href="/documentation">Documentation</a></li>
+<li><a href="https://training.cloudinary.com/">Education &amp; Training</a></li>
+<li><a href="/glossary">Glossary</a></li>
+<li><a href="/podcasts">Podcasts</a></li>
+<li><a href="/resources">Resource Library</a></li>
+<li><a href="/tools">Tools</a></li>
+</ul>
+</div></div><div class="dropdown-column"><div class="dropdown-header">Connect<span class="sub"></span></div><div class="description"><div class="d-lg-flex">
+<ul>
+<li><a href="https://community.cloudinary.com/">Community</a></li>
+</ul>
+<div>
+<div class="dropdown-header">Support</div>
+<ul>
+<li><a href="https://support.cloudinary.com/">Knowledge Base</a></li>
+<li><a href="https://cloudinary.com/professional-services">Professional Services</a></li>
+<li><a href="https://support.cloudinary.com/">Technical Support</a></li>
+</ul>
+</div>
+</div>
+</div></div><div class="featured-content"><span class="title">Tech Articles</span><div class="description"><ul>
+<li><a href="/guides/image-formats/automatically-change-format-to-jpg">Image Formats</a></li>
+<li><a href="https://cloudinary.com/guides/video-formats/top-six-web-video-formats-of-2023">Video Formats</a></li>
+<li><a href="/guides/image-effects/how-to-create-a-progress-bar-for-asset-uploads">Image Effects</a></li>
+<li><a href="/guides/video-effects/simplify-mobile-video-optimization">Video Effects</a></li>
+<li><a href="/guides/digital-asset-management/what-is-digital-asset-management">Digital Asset Management</a></li>
+<li><a href="/guides/e-commerce-platform/select-the-right-e-commerce-platform-for-your-needs">E-Commerce Platform</a></li>
+<li><a href="/guides/front-end-development/front-end-development-the-complete-guide">Front-End Development</a></li>
+</ul>
+<ul>
+<li><a href="https://cloudinary.com/guides/ai/cropping-images-using-ai">AI</a></li>
+<li><a href="https://cloudinary.com/guides/web-performance/web-performance-what-is-it-trends-and-insights-for-2024">Web Performance</a></li>
+<li><a href="/guides/responsive-images/4-techniques-for-creating-responsive-images-with-bootstrap">Responsive Images</a></li>
+<li><a href="/guides/bulk-image-resize/bulk-image-resize-in-css-javascript-python-java-node-js-and-other-languages">Bulk Image Resize</a></li>
+<li><a href="https://cloudinary.com/guides/automatic-image-cropping/auto-image-crop-use-cases-features-and-best-practices">Automatic Image Cropping</a></li>
+<li><a href="/guides/marketing-videos/12-types-of-marketing-videos-and-10-ways-to-make-them-great">Marketing Videos</a></li>
+<li><a href="/guides/wordpress-plugin/optimize-video-for-wordpress-a-guide-for-seamless-performance">WordPress Plugin</a></li>
+</ul>
+</div></div></div>
+</div>
+</li>
+<li id="menu-item-27984" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-has-children menu-item-27984 nav-item dropdown first-level"><a href="#" class="nav-link dropdown-toggle">About Us<span class="sub"></span></a>
+<div class="dropdown-menu">
+
+<div class="container-fluid inner depth-0">
+<div class="dropdown-column"><div class="dropdown-header">Cloudinary Overview<span class="sub"></span></div><div class="description"><ul>
+<li><a href="/about">About Us</a></li>
+<li><a href="/customers">Customers</a></li>
+<li><a href="https://cloudinary.com/partners">Become a Partner</a></li>
+<li><a href="https://cloudinary.com/solution-partners">Find a Solution Partner</a></li>
+</ul>
+<ul>
+<li><a href="/careers">Careers</a></li>
+<li><a href="/newsroom">Newsroom</a></li>
+<li><a href="/labs">Labs</a></li>
+</ul>
+</div></div><div class="dropdown-column"><div class="dropdown-header">Upcoming Events<span class="sub"></span></div><div class="description"><div>
+<p style="margin-bottom: 10px"><a href="/events"><img decoding="async" src="https://cloudinary-marketing-res.cloudinary.com/images/f_auto,q_auto/v1687885591/Events_Nav_Placeholder/Events_Nav_Placeholder-png?_i=AA" alt="Upcoming Events" width="240" height="168" /></a></p>
+<ul>
+<li><a href="/events">See all events</a></li>
+</ul>
+</div>
+</div></div></div>
+</div>
+</li>
+<li id="menu-item-27987" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27987 nav-item first-level"><a href="/pricing" class="nav-link">Pricing<span class="sub"></span></a></li>
+</ul></div>        <div class='header-side-nav'>
+          <div class='header-side-nav-wrapper'>
+            <div class="search-block">
+              <div class="search-opener" style="display: block; cursor: pointer;" onclick="dataLayer.push({'event': 'event to GA','eventCategory': 'website primary navigation','eventAction': 'website google search','eventLabel': 'Search'})"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></div>
+              <div class="search_box">
+                <gcse:search></gcse:search>
+              </div>
+            </div>
+                        <div class="menu-top-right-menu-container"><ul id="top-right-menu" class="menu"><li id="menu-item-16518" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16518 nav-item first-level"><a href="/contact" class="nav-link" onclick="dataLayer.push({&#039;event&#039;: &#039;event to GA&#039;,&#039;eventCategory&#039;: &#039;website primary navigation&#039;,&#039;eventAction&#039;: &#039;navigate&#039;,&#039;eventLabel&#039;: &#039;Contact&#039;})">Contact<span class="sub"></span></a></li>
+<li id="menu-item-13062" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13062 nav-item first-level"><a href="https://support.cloudinary.com/" class="nav-link" onclick="dataLayer.push({&#039;event&#039;: &#039;event to GA&#039;,&#039;eventCategory&#039;: &#039;website primary navigation&#039;,&#039;eventAction&#039;: &#039;navigate&#039;,&#039;eventLabel&#039;: &#039;Support&#039;})">Support<span class="sub"></span></a></li>
+<li id="menu-item-13074" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13074 nav-item first-level"><a href="/documentation" class="nav-link" onclick="dataLayer.push({&#039;event&#039;: &#039;event to GA&#039;,&#039;eventCategory&#039;: &#039;website primary navigation&#039;,&#039;eventAction&#039;: &#039;navigate&#039;,&#039;eventLabel&#039;: &#039;Documentation&#039;})">Documentation<span class="sub"></span></a></li>
+<li id="menu-item-13063" class="-ce-ignore menu-item menu-item-type-custom menu-item-object-custom menu-item-13063 nav-item first-level"><a href="https://cloudinary.com/users/login" class="nav-link" onclick="dataLayer.push({&#039;event&#039;: &#039;event to GA&#039;,&#039;eventCategory&#039;: &#039;website primary navigation&#039;,&#039;eventAction&#039;: &#039;navigate&#039;,&#039;eventLabel&#039;: &#039;Login&#039;})">Login<span class="sub"></span></a></li>
+</ul></div>          </div>
+          <div class="signup-block">
+                          <a class="btn btn-sm btn-default" href="https://cloudinary.com/users/register_free">sign up for free</a>
+                      </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+      </div>
+    </div>
+    <div id="fixed-spacer"></div>
+  </header>
+
+  <div class="site-content-contain">
+    <div id="main" class="">
+<style id="cld-critical-css">
+  @font-face{font-display:swap;font-family:Inter;font-style:normal;font-weight:400;src:url('https://cloudinary.com/wp-content/themes/cld-2021/assets/fonts/inter/subsets/Inter-Regular-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-display:swap;font-family:Inter;font-style:normal;font-weight:400;src:url('https://cloudinary.com/wp-content/themes/cld-2021/assets/fonts/inter/subsets/Inter-Regular-cyrillic.woff2') format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-display:swap;font-family:Inter;font-style:normal;font-weight:400;src:url('https://cloudinary.com/wp-content/themes/cld-2021/assets/fonts/inter/subsets/Inter-Regular-greek-ext.woff2') format('woff2');unicode-range:U+1F00-1FFF}@font-face{font-display:swap;font-family:Inter;font-style:normal;font-weight:400;src:url('https://cloudinary.com/wp-content/themes/cld-2021/assets/fonts/inter/subsets/Inter-Regular-greek.woff2') format('woff2');unicode-range:U+0370-03FF}@font-face{font-display:swap;font-family:Inter;font-style:normal;font-weight:400;src:url('https://cloudinary.com/wp-content/themes/cld-2021/assets/fonts/inter/subsets/Inter-Regular-vietnamese.woff2') format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}@font-face{font-display:swap;font-family:Inter;font-style:normal;font-weight:400;src:url('https://cloudinary.com/wp-content/themes/cld-2021/assets/fonts/inter/subsets/Inter-Regular-latin-ext.woff2') format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-display:swap;font-family:Inter;font-style:normal;font-weight:400;src:url('https://cloudinary.com/wp-content/themes/cld-2021/assets/fonts/inter/subsets/Inter-Regular-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-display:swap;font-family:Inter;font-style:italic;font-weight:400;src:url('https://cloudinary.com/wp-content/themes/cld-2021/assets/fonts/inter/subsets/Inter-Italic-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-display:swap;font-family:Inter;font-style:italic;font-weight:400;src:url('https://cloudinary.com/wp-content/themes/cld-2021/assets/fonts/inter/subsets/Inter-Italic-cyrillic.woff2') format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-display:swap;font-family:Inter;font-style:italic;font-weight:400;src:url('https://cloudinary.com/wp-content/themes/cld-2021/assets/fonts/inter/subsets/Inter-Italic-greek-ext.woff2') format('woff2');unicode-range:U+1F00-1FFF}@font-face{font-display:swap;font-family:Inter;font-style:italic;font-weight:400;src:url('https://cloudinary.com/wp-content/themes/cld-2021/assets/fonts/inter/subsets/Inter-Italic-greek.woff2') format('woff2');unicode-range:U+0370-03FF}@font-face{font-display:swap;font-family:Inter;font-style:italic;font-weight:400;src:url('https://cloudinary.com/wp-content/themes/cld-2021/assets/fonts/inter/subsets/Inter-Italic-vietnamese.woff2') format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}@font-face{font-display:swap;font-family:Inter;font-style:italic;font-weight:400;src:url('https://cloudinary.com/wp-content/themes/cld-2021/assets/fonts/inter/subsets/Inter-Italic-latin-ext.woff2') format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-display:swap;font-family:Inter;font-style:italic;font-weight:400;src:url('https://cloudinary.com/wp-content/themes/cld-2021/assets/fonts/inter/subsets/Inter-Italic-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-display:swap;font-family:Inter;font-style:normal;font-weight:700;src:url('https://cloudinary.com/wp-content/themes/cld-2021/assets/fonts/inter/subsets/Inter-Bold-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-display:swap;font-family:Inter;font-style:normal;font-weight:700;src:url('https://cloudinary.com/wp-content/themes/cld-2021/assets/fonts/inter/subsets/Inter-Bold-cyrillic.woff2') format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-display:swap;font-family:Inter;font-style:normal;font-weight:700;src:url('https://cloudinary.com/wp-content/themes/cld-2021/assets/fonts/inter/subsets/Inter-Bold-greek-ext.woff2') format('woff2');unicode-range:U+1F00-1FFF}@font-face{font-display:swap;font-family:Inter;font-style:normal;font-weight:700;src:url('https://cloudinary.com/wp-content/themes/cld-2021/assets/fonts/inter/subsets/Inter-Bold-greek.woff2') format('woff2');unicode-range:U+0370-03FF}@font-face{font-display:swap;font-family:Inter;font-style:normal;font-weight:700;src:url('https://cloudinary.com/wp-content/themes/cld-2021/assets/fonts/inter/subsets/Inter-Bold-vietnamese.woff2') format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}@font-face{font-display:swap;font-family:Inter;font-style:normal;font-weight:700;src:url('https://cloudinary.com/wp-content/themes/cld-2021/assets/fonts/inter/subsets/Inter-Bold-latin-ext.woff2') format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-display:swap;font-family:Inter;font-style:normal;font-weight:700;src:url('https://cloudinary.com/wp-content/themes/cld-2021/assets/fonts/inter/subsets/Inter-Bold-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-display:swap;font-family:Inter;font-style:italic;font-weight:700;src:url('https://cloudinary.com/wp-content/themes/cld-2021/assets/fonts/inter/subsets/Inter-BoldItalic-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-display:swap;font-family:Inter;font-style:italic;font-weight:700;src:url('https://cloudinary.com/wp-content/themes/cld-2021/assets/fonts/inter/subsets/Inter-BoldItalic-cyrillic.woff2') format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-display:swap;font-family:Inter;font-style:italic;font-weight:700;src:url('https://cloudinary.com/wp-content/themes/cld-2021/assets/fonts/inter/subsets/Inter-BoldItalic-greek-ext.woff2') format('woff2');unicode-range:U+1F00-1FFF}@font-face{font-display:swap;font-family:Inter;font-style:italic;font-weight:700;src:url('https://cloudinary.com/wp-content/themes/cld-2021/assets/fonts/inter/subsets/Inter-BoldItalic-greek.woff2') format('woff2');unicode-range:U+0370-03FF}@font-face{font-display:swap;font-family:Inter;font-style:italic;font-weight:700;src:url('https://cloudinary.com/wp-content/themes/cld-2021/assets/fonts/inter/subsets/Inter-BoldItalic-vietnamese.woff2') format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}@font-face{font-display:swap;font-family:Inter;font-style:italic;font-weight:700;src:url('https://cloudinary.com/wp-content/themes/cld-2021/assets/fonts/inter/subsets/Inter-BoldItalic-latin-ext.woff2') format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-display:swap;font-family:Inter;font-style:italic;font-weight:700;src:url('https://cloudinary.com/wp-content/themes/cld-2021/assets/fonts/inter/subsets/Inter-BoldItalic-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:sofia-pro;src:url("https://use.typekit.net/af/5d97ff/00000000000000007735f999/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/5d97ff/00000000000000007735f999/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/5d97ff/00000000000000007735f999/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");font-display:swap;font-style:normal;font-weight:700;font-stretch:normal}@font-face{font-family:sofia-pro;src:url("https://use.typekit.net/af/66e20c/00000000000000007735f993/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"),url("https://use.typekit.net/af/66e20c/00000000000000007735f993/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"),url("https://use.typekit.net/af/66e20c/00000000000000007735f993/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");font-display:swap;font-style:italic;font-weight:700;font-stretch:normal}@font-face{font-family:sofia-pro;src:url("https://use.typekit.net/af/2e2409/00000000000000007735f990/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"),url("https://use.typekit.net/af/2e2409/00000000000000007735f990/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"),url("https://use.typekit.net/af/2e2409/00000000000000007735f990/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");font-display:swap;font-style:normal;font-weight:300;font-stretch:normal}@font-face{font-family:sofia-pro;src:url("https://use.typekit.net/af/0ab956/00000000000000007735f998/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3") format("woff2"),url("https://use.typekit.net/af/0ab956/00000000000000007735f998/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3") format("woff"),url("https://use.typekit.net/af/0ab956/00000000000000007735f998/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3") format("opentype");font-display:swap;font-style:italic;font-weight:300;font-stretch:normal}@font-face{font-family:sofia-pro;src:url("https://use.typekit.net/af/19ced7/00000000000000007735f992/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"),url("https://use.typekit.net/af/19ced7/00000000000000007735f992/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff"),url("https://use.typekit.net/af/19ced7/00000000000000007735f992/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("opentype");font-display:swap;font-style:normal;font-weight:500;font-stretch:normal}@font-face{font-family:sofia-pro;src:url("https://use.typekit.net/af/b718ff/00000000000000007735f98d/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/b718ff/00000000000000007735f98d/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/b718ff/00000000000000007735f98d/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");font-display:swap;font-style:normal;font-weight:400;font-stretch:normal}@font-face{font-family:sofia-pro;src:url("https://use.typekit.net/af/c09857/00000000000000007735f98c/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/c09857/00000000000000007735f98c/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/c09857/00000000000000007735f98c/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");font-display:swap;font-style:italic;font-weight:400;font-stretch:normal}@font-face{font-family:sofia-pro;src:url("https://use.typekit.net/af/262452/00000000000000007735f99a/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff2"),url("https://use.typekit.net/af/262452/00000000000000007735f99a/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff"),url("https://use.typekit.net/af/262452/00000000000000007735f99a/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("opentype");font-display:swap;font-style:normal;font-weight:600;font-stretch:normal}.col-sm-3,.col-xs-12{position:relative;min-height:1px;padding-right:15px;padding-left:15px}@-ms-viewport{width:device-width}@font-face{font-family:Inter;font-weight:300 900;font-display:swap;font-style:normal;font-named-instance:'Regular';src:url('https://cloudinary.com/wp-content/themes/cld-2021/assets/2022/fonts/inter/Inter-roman.var.woff2') format("woff2")}body{--wp--preset--color--black:#000000;--wp--preset--color--cyan-bluish-gray:#abb8c3;--wp--preset--color--white:#ffffff;--wp--preset--color--pale-pink:#f78da7;--wp--preset--color--vivid-red:#cf2e2e;--wp--preset--color--luminous-vivid-orange:#ff6900;--wp--preset--color--luminous-vivid-amber:#fcb900;--wp--preset--color--light-green-cyan:#7bdcb5;--wp--preset--color--vivid-green-cyan:#00d084;--wp--preset--color--pale-cyan-blue:#8ed1fc;--wp--preset--color--vivid-cyan-blue:#0693e3;--wp--preset--color--vivid-purple:#9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple:linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan:linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange:linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red:linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray:linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum:linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple:linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux:linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk:linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean:linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass:linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight:linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale:url('https://cloudinary.com/guides/image-formats/#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale:url('https://cloudinary.com/guides/image-formats/#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow:url('https://cloudinary.com/guides/image-formats/#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red:url('https://cloudinary.com/guides/image-formats/#wp-duotone-blue-red');--wp--preset--duotone--midnight:url('https://cloudinary.com/guides/image-formats/#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow:url('https://cloudinary.com/guides/image-formats/#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green:url('https://cloudinary.com/guides/image-formats/#wp-duotone-purple-green');--wp--preset--duotone--blue-orange:url('https://cloudinary.com/guides/image-formats/#wp-duotone-blue-orange');--wp--preset--font-size--small:13px;--wp--preset--font-size--medium:20px;--wp--preset--font-size--large:36px;--wp--preset--font-size--x-large:42px;--wp--preset--spacing--20:0.44rem;--wp--preset--spacing--30:0.67rem;--wp--preset--spacing--40:1rem;--wp--preset--spacing--50:1.5rem;--wp--preset--spacing--60:2.25rem;--wp--preset--spacing--70:3.38rem;--wp--preset--spacing--80:5.06rem;--wp--preset--shadow--natural:6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep:12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp:6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined:6px 6px 0px -3px rgba(255, 255, 255, 1),6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp:6px 6px 0px rgba(0, 0, 0, 1)}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body{margin:0}header,main,nav,section{display:block}a{background-color:transparent}h1{margin:.67em 0;font-size:2em}small{font-size:80%}img{border:0}svg:not(:root){overflow:hidden}button{margin:0;font:inherit;color:inherit}button{overflow:visible}button{text-transform:none}button{-webkit-appearance:button}button::-moz-focus-inner{padding:0;border:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}button{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7;text-decoration:none}img{vertical-align:middle}h1,h2,h4{font-family:inherit;font-weight:500;line-height:1.1;color:inherit}h1,h2{margin-top:20px;margin-bottom:10px}h4{margin-top:10px;margin-bottom:10px}h1{font-size:36px}h2{font-size:30px}h4{font-size:18px}p{margin:0 0 10px}small{font-size:85%}ul{margin-top:0;margin-bottom:10px}ul ul{margin-bottom:0}.container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.container-fluid{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.row{margin-right:-15px;margin-left:-15px}.col-sm-3,.col-sm-6,.col-xs-12{position:relative;min-height:1px;padding-right:15px;padding-left:15px}.col-xs-12{float:left}.col-xs-12{width:100%}.btn{display:inline-block;padding:6px 12px;margin-bottom:0;font-size:14px;font-weight:400;line-height:1.42857143;text-align:center;white-space:nowrap;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;background-image:none;border:1px solid transparent;border-radius:4px}.btn-default{color:#333;background-color:#fff;border-color:#ccc}.btn-sm{padding:5px 10px;font-size:12px;line-height:1.5;border-radius:3px}.collapse{display:none}.dropdown{position:relative}.dropdown-menu{position:absolute;top:100%;left:0;z-index:1000;display:none;float:left;min-width:160px;padding:5px 0;margin:2px 0 0;font-size:14px;text-align:left;list-style:none;background-color:#fff;-webkit-background-clip:padding-box;background-clip:padding-box;border:1px solid #ccc;border:1px solid rgba(0,0,0,.15);border-radius:4px;-webkit-box-shadow:0 6px 12px rgba(0,0,0,.175);box-shadow:0 6px 12px rgba(0,0,0,.175)}.dropdown-header{display:block;padding:3px 20px;font-size:12px;line-height:1.42857143;color:#777;white-space:nowrap}.navbar{position:relative;min-height:50px;margin-bottom:20px;border:1px solid transparent}.navbar-collapse{padding-right:15px;padding-left:15px;overflow-x:visible;-webkit-overflow-scrolling:touch;border-top:1px solid transparent;-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.1);box-shadow:inset 0 1px 0 rgba(255,255,255,.1)}.container-fluid>.navbar-collapse,.container-fluid>.navbar-header{margin-right:-15px;margin-left:-15px}@media (min-width:768px){.col-sm-3,.col-sm-6{float:left}.col-sm-6{width:50%}.col-sm-3{width:25%}.navbar{border-radius:4px}.navbar-header{float:left}.navbar-collapse{width:auto;border-top:0;-webkit-box-shadow:none;box-shadow:none}.navbar-collapse.collapse{display:block!important;height:auto!important;padding-bottom:0;overflow:visible!important}.container-fluid>.navbar-collapse,.container-fluid>.navbar-header{margin-right:0;margin-left:0}.navbar-toggle{display:none}}.navbar-toggle{position:relative;float:right;padding:9px 10px;margin-top:8px;margin-right:15px;margin-bottom:8px;background-color:transparent;background-image:none;border:1px solid transparent;border-radius:4px}.navbar-nav{margin:7.5px -15px}.navbar-nav>li>a{padding-top:10px;padding-bottom:10px;line-height:20px}@media (min-width:768px){.navbar-nav{float:left;margin:0}.navbar-nav>li{float:left}.navbar-nav>li>a{padding-top:15px;padding-bottom:15px}}.navbar-nav>li>.dropdown-menu{margin-top:0;border-top-left-radius:0;border-top-right-radius:0}.navbar-default{background-color:#f8f8f8;border-color:#e7e7e7}.navbar-default .navbar-nav>li>a{color:#777}.navbar-default .navbar-toggle{border-color:#ddd}.navbar-default .navbar-collapse{border-color:#e7e7e7}.list-group{padding-left:0;margin-bottom:20px}.list-group-item{position:relative;display:block;padding:10px 15px;margin-bottom:-1px;background-color:#fff;border:1px solid #ddd}.list-group-item:first-child{border-top-left-radius:4px;border-top-right-radius:4px}.list-group-item:last-child{margin-bottom:0;border-bottom-right-radius:4px;border-bottom-left-radius:4px}a.list-group-item{color:#555}.container-fluid:after,.container-fluid:before,.container:after,.container:before,.navbar-collapse:after,.navbar-collapse:before,.navbar-header:after,.navbar-header:before,.navbar:after,.navbar:before,.row:after,.row:before{display:table;content:" "}.container-fluid:after,.container:after,.navbar-collapse:after,.navbar-header:after,.navbar:after,.row:after{clear:both}body{font-family:Inter,sans-serif;font-weight:400;font-size:18px;line-height:28px;color:#0c163b}h1,h2,h4{font-family:sofia-pro,sans-serif;color:#0c163b;font-weight:700;font-style:normal;margin-top:0}h1{font-size:50px;line-height:58px}h2{font-size:46px;line-height:46px}h4{font-size:24px;line-height:30px}@media only screen and (max-width:767px){h2{font-size:34px;line-height:40px}}.title h1{margin-bottom:25px}a{font-family:sofia-pro,sans-serif;font-weight:700;font-style:normal;color:#ff5050;text-decoration:none}a,button{outline:0!important}p{margin-bottom:30px}img{height:auto;max-width:100%}.btn{text-transform:uppercase;white-space:normal!important;font-weight:700;border-radius:27px;padding:13px 35px;text-decoration:none;letter-spacing:.2px;font-size:18px}.btn-default{color:#fff;background-color:#ff5050;border-color:#ff5050}.btn-sm{padding:7px 10px;border-radius:30px}.container-fluid{max-width:1920px;padding-left:45px;padding-right:45px}@media screen and (max-width:1070px){.container-fluid{padding-left:15px;padding-right:15px}}#header a{font-family:Inter,sans-serif}#header #header-inner{position:relative;width:100%;left:0;right:0;top:0;z-index:99;font-size:15px;line-height:1.65}#header #header-inner .header-frame{background:#fff;box-shadow:0 1px 5px rgba(0,0,0,.15);position:relative;width:100%;left:0;right:0;top:0;z-index:99}#header #header-inner .header-frame .container-fluid{display:flex;align-items:center;max-width:1360px}#header .header-frame{padding:0}#header .header-frame .navbar-default{background:0 0;border:0;margin:0;min-height:1px}#header .header-frame .navbar-default .navbar-collapse{padding:0;flex:1 1 auto}#header .header-frame .navbar-default .navbar-collapse .header-section{display:flex;justify-content:space-between}#header .header-frame .navbar-default .navbar-collapse .navbar-nav{position:static;padding:0 20px;display:flex}#header .header-frame .navbar-default .navbar-collapse .navbar-nav>li{padding:0 10px;position:static;font-size:13px;line-height:1;font-weight:400;list-style-type:none;white-space:nowrap}#header .header-frame .navbar-default .navbar-collapse .navbar-nav>li>a{font-family:Inter,sans-serif;font-size:13px;letter-spacing:.5px;color:#0c163b;font-weight:400;font-style:normal;text-decoration:none;padding:24px 0;text-transform:uppercase;position:relative;display:block}#header .header-frame .navbar-default .navbar-collapse .navbar-nav>li>a:after{content:"";position:absolute;bottom:0;left:0;right:0;height:3px;background-color:#fff}#header .header-frame .navbar-default .navbar-collapse .navbar-nav>li:nth-child(1) .dropdown-menu .inner .dropdown-column{flex:1 0 40%;max-width:calc(40% - 20px)}#header .header-frame .navbar-default .navbar-collapse .navbar-nav>li:nth-child(2) .dropdown-menu .inner .dropdown-column{flex:1 0 50%;max-width:calc(50% - 20px)}#header .header-frame .navbar-default .navbar-collapse .navbar-nav>li:nth-child(5) .dropdown-menu .inner .dropdown-column{flex:1 0 50%;max-width:47%}#header .header-frame .navbar-default .navbar-collapse .signup-block{margin-left:20px}#header .header-frame .navbar-default .navbar-collapse .signup-block .btn{font-size:14px;line-height:1.4;padding:8px 18px;border-radius:20px;height:auto;margin-top:0;border:none;white-space:nowrap!important}#header .header-frame .header-side-nav{font-size:14px;line-height:15px;font-weight:400;display:flex;justify-content:flex-end;align-items:center}#header .header-frame .header-side-nav .header-side-nav-wrapper{display:flex;justify-content:flex-end;align-items:center}#header .header-frame .header-side-nav ul{margin:0;padding:0;list-style:none;display:flex}#header .header-frame .header-side-nav li:not(.btn){padding:0;display:inline-block;vertical-align:top;position:relative}#header .header-frame .header-side-nav li:not(.btn) a{color:#0c163b;font-weight:400;padding:2px 7px;font-size:13px;font-family:sofia-pro,sans-serif}#header .header-frame .header-side-nav li:not(.btn).has-icon>a{display:flex;min-width:60px}#header .header-frame .header-side-nav li:not(.btn).has-icon>a .nav-icon{flex:0 0 18px;max-width:18px;max-height:18px;margin-right:5px;flex-shrink:0}#header .header-frame .header-side-nav li:not(.btn).has-icon.hide-title .nav-icon{margin-right:0}#header .header-frame .header-side-nav li:not(.btn):not(.has-icon){padding-top:2px}#header .header-frame .header-side-nav li:not(.btn).hide-title>a{min-width:1px}#header .header-frame .header-side-nav li:not(.btn):before{content:"";display:block;width:1px;height:15px;background-color:#ccc;position:absolute;left:0;top:50%;margin-top:-7.5px}#header .header-frame .header-side-nav li:not(.btn) .nav-icon{width:18px}#header .header-frame .header-side-nav li:not(.btn).dropdown .dropdown-menu{border-top:none;border-bottom:none;margin:0;min-width:160px}#header .header-frame .header-side-nav li:not(.btn).dropdown .dropdown-menu .inner{flex-direction:column;padding:10px 0;gap:0}#header .header-frame .header-side-nav li:not(.btn).dropdown .dropdown-menu .inner .dropdown-column{padding:0}#header .header-frame .header-side-nav li:not(.btn).dropdown .dropdown-menu .inner .dropdown-column .dropdown-item{padding:5px 10px;border:none;font-size:15px;line-height:1;color:#0c163b}.dropdown-menu{font-family:Inter,sans-serif;padding:0;border:none;min-width:100%;max-width:100%;box-shadow:none;border-top:1px solid #eeeef1;border-bottom:1px solid #eeeef1;border-radius:0}.dropdown-menu .inner{align-items:stretch!important;gap:20px}.dropdown-menu .inner::after,.dropdown-menu .inner::before{display:none}.dropdown-menu .inner .dropdown-column{padding:30px 0;min-width:22.25%}.dropdown-menu .inner .dropdown-column .dropdown-header{padding:10px 0;margin:0 0 5px;font-size:12px;letter-spacing:.5px;line-height:1;font-weight:600;text-transform:uppercase;color:#0b173b}.dropdown-menu .inner .dropdown-column .dropdown-item{display:block;padding:20px 24px;font-size:15px;line-height:1.2;color:#0c163b;text-decoration:none;border-left:3px solid transparent;background-color:transparent;font-weight:600}.dropdown-menu .inner .dropdown-column .dropdown-item .sub{display:block;padding-top:5px;font-size:12px;line-height:18px;font-weight:400;color:#49506c}.dropdown-menu .inner .dropdown-column .link-list{padding:0;list-style:none}.dropdown-menu .inner .dropdown-column .link-list .link-list-item{background-color:transparent;margin-bottom:5px;display:flex;align-items:center}.dropdown-menu .inner .dropdown-column .link-list .link-list-item .nav-icon{flex:1 0 28px;max-width:28px;margin-right:10px}.dropdown-menu .inner .dropdown-column .link-list .link-list-item a{display:block;padding:8px 24px;font-size:15px;line-height:16px;color:#0c163b;font-weight:600}.dropdown-menu .inner .dropdown-column .link-list .link-list-item.has-description a{display:block;padding:10px 0;font-size:18px;line-height:1;color:#0c163b;font-weight:400}.dropdown-menu .inner .dropdown-column .link-list .link-list-item.has-description a .sub{display:block;padding-top:5px;font-size:12px;line-height:17px;font-weight:400;color:#0c163b}.dropdown-menu .inner .dropdown-column .link-list .link-list-item.has-description a .chevron{display:inline-block;margin-left:8px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 320 512'%3E%3Cpath d='M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z' fill='%230C163B'/%3E%3C/svg%3E");background-position:center;background-repeat:no-repeat;background-size:contain;width:14px;height:14px;transform:translateY(2px)}.dropdown-menu .inner .description{display:flex;gap:6%}.dropdown-menu .inner .description ul{flex:1;list-style:none;padding:0;margin:0}.dropdown-menu .inner .description ul a{display:block;padding:10px 0;font-size:16px;line-height:1;color:#0c163b;font-weight:400}.dropdown-menu .inner .description ul a::after{content:"";display:inline-block;margin-left:8px;opacity:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 320 512'%3E%3Cpath d='M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z' fill='%233F5FFF'/%3E%3C/svg%3E");background-position:center;background-repeat:no-repeat;background-size:contain;width:14px;height:14px;transform:translateY(2px)}.dropdown-menu .inner .description ul+div{margin-top:28px}.dropdown-menu .inner .featured-content{flex:1 0 52%;max-width:52%;background-color:#f3f4fe;padding:30px 45px}.dropdown-menu .inner .featured-content .title{display:block;padding:10px 0;margin:0 0 10px;font-size:12px;letter-spacing:.5px;line-height:1;font-weight:600;text-transform:uppercase;color:#0b173b}.search-block{display:inline-block;vertical-align:top;margin:0 20px 0 5px;margin-right:5px;text-align:left;max-height:28px;line-height:1;position:relative}.search-block .search-opener{border:0;display:inline-block;vertical-align:top;font-size:15px;color:#0c163b}.search-block .search-opener svg{width:14px;margin-top:1px;margin-right:4px}.search_box{display:none;width:320px;text-shadow:none;position:absolute;z-index:101;top:100%;right:0;margin-right:-12px;margin-top:8px;box-shadow:0 1px 5px rgba(0,0,0,.15)}.search_box *{box-sizing:content-box}@media screen and (max-width:1470px){#header .header-frame .navbar-default .navbar-collapse .navbar-nav>li{padding:0 10px}}@media screen and (max-width:1349px){#header .header-frame .header-side-nav{flex-direction:column;justify-content:flex-start;padding-bottom:10px;margin-top:5px;position:relative}#header .header-frame .navbar-default .navbar-collapse .signup-block{margin-left:0;margin-top:7px}#header .header-frame .navbar-default .navbar-collapse .header-section{align-items:flex-end}}@media screen and (max-width:1249px){body{font-size:18px}#header .header-frame .header-side-nav li a{padding:2px 4px}#header .header-frame .navbar-default .navbar-collapse .navbar-nav>li{padding:0 6px}#header .header-frame .navbar-default .navbar-collapse .navbar-nav>li>a{font-size:12px!important}#header .header-frame .header-side-nav{font-size:12px}#header .header-frame .navbar-default .navbar-collapse .signup-block .btn{font-size:12px;min-width:1px}.search-block{margin-right:10px}#header .header-frame .navbar-default .navbar-collapse .signup-block{margin-left:10px}}@media screen and (max-width:1070px){.navbar-toggle{display:block;border:none;padding:0}.navbar-collapse.collapse:not([aria-expanded=true]){display:none!important;overflow:hidden!important}.navbar-toggler-icon{display:block;padding:5px 5px 0}#nav-icon{width:22px;height:22px;position:relative;transform:rotate(0);display:inline-block}#nav-icon span{display:block;position:absolute;height:2px;width:100%;background:#fff;border-radius:1px;opacity:1;left:0;transform:rotate(0)}.navbar-toggler-icon:not(.js-replace-color) #nav-icon span{background:#0c163b}#nav-icon span:nth-child(1){top:0}#nav-icon span:nth-child(2),#nav-icon span:nth-child(3){top:10px}#nav-icon span:nth-child(4){top:20px}#header #header-inner .header-frame .navbar>.container-fluid{flex-direction:column;align-items:stretch}#header #header-inner .header-frame .navbar-header{display:flex;justify-content:space-between;align-items:center}#header #header-inner .header-frame .navbar-header:after,#header #header-inner .header-frame .navbar-header:before{display:none}#header #header-inner .header-frame .navbar-header .logo{margin-left:15px}#header .header-frame .navbar-default .navbar-collapse{padding-left:15px;padding-right:15px}#header .header-frame .navbar-default .navbar-collapse .navbar-nav{padding:0;float:none;text-align:center}#header .header-frame .navbar-default .navbar-collapse .navbar-nav>li{margin:0;display:inline-block;float:none;padding:0}#header .header-frame .navbar-default .navbar-collapse .navbar-nav>li>a{display:block;padding:15px;text-align:center}.dropdown-menu .inner{padding-left:30px;padding-right:30px}.dropdown-menu .inner .dropdown-column .dropdown-header{font-size:15px;color:#304b6f}.dropdown-menu .inner .dropdown-column .link-list .link-list-item.has-description a{font-size:15px}.dropdown-menu .inner .description ul a{font-size:15px}.dropdown-menu .inner .dropdown-column .link-list .link-list-item.has-description a .sub{font-size:12px}}@media screen and (max-width:991px){#header .header-frame .navbar-default .navbar-collapse .navbar-nav>li{display:block}#mainMenu .dropdown-menu{padding-left:30px;padding-right:30px}.dropdown-menu .inner .dropdown-column,.dropdown-menu .inner .dropdown-column:nth-child(2){flex:1 1 100%!important;max-width:100%!important;padding-left:5px;padding-right:5px}.dropdown-menu .inner .dropdown-column .link-list .link-list-item.has-description a{padding:15px 0}.dropdown-menu .inner .featured-content .description{padding:0}.search_box{right:auto;margin-right:0;left:0;margin-left:-25px}#header .header-frame .navbar-default .navbar-collapse .header-section{flex-direction:column;align-items:stretch}#header .header-frame .header-side-nav{padding-bottom:40px;padding-top:20px;border-top:1px solid #eeeef1}#header .header-frame .navbar-default .navbar-collapse .signup-block{margin-top:20px;margin-left:0}#header .header-frame .navbar-default .navbar-collapse .navbar-nav{justify-content:center;position:relative}#header .header-frame .header-side-nav .menu{position:relative}#header .header-frame .header-side-nav li.dropdown{position:static}#header .header-frame .header-side-nav li:not(.btn):first-child::before{display:none}.dropdown-menu .inner{padding-left:0;padding-right:0}.dropdown-menu .inner .description{flex-direction:column}.dropdown-menu .inner .featured-content{flex:1 0 100%;max-width:150%;margin-left:-21px;margin-right:-21px;padding:30px}#header .header-frame .header-side-nav{flex-direction:column;justify-content:flex-start;padding-bottom:10px;margin-top:0;position:relative}.search-block{display:none;visibility:hidden}}@media screen and (max-width:767px){body{font-size:17px}.dropdown-menu .inner{flex-direction:column;padding-left:20px;padding-right:20px}.dropdown-menu .inner .dropdown-column+.dropdown-column{padding-top:0}#header .header-frame .navbar-default .navbar-collapse .navbar-nav{flex-direction:column}#header .header-frame .header-side-nav li:not(.btn).dropdown .dropdown-menu{top:auto;bottom:100%}#mainMenu .dropdown-menu{padding-left:0;padding-right:0}}@media screen and (min-width:1071px){.navbar-toggle{display:none}.navbar-collapse.collapse{display:block!important;height:auto!important;padding-bottom:0;overflow:visible!important}#header .header-frame .navbar-default .navbar-collapse .navbar-nav>li:nth-child(4) .dropdown-menu .inner .dropdown-column:nth-child(1){flex:0 0 16%;max-width:calc(16% - 20px);min-width:1px}#header .header-frame .navbar-default .navbar-collapse .navbar-nav>li:nth-child(4) .dropdown-menu .inner .dropdown-column:nth-child(2){flex:0 0 32%;max-width:calc(32% - 20px)}.d-lg-flex{width:100%;display:flex}.dropdown-menu .inner .description .d-lg-flex ul+div{margin-top:-40px;flex:1}}.cls-1{fill:#3448c5}.site-content-contain{position:relative;z-index:1}.guides .container{width:1340px;max-width:90%}.guides .navbar{background-color:#3448c5;color:#fff;border-radius:0;border:none;margin:0;position:fixed;width:100%;z-index:3;top:70px}@media (max-width:1070px){.guides .navbar{top:50px}}.guides .navbar .dropdown{padding:10px 15px 10px 0;position:static}@media (max-width:991px){.guides .navbar .dropdown{padding-right:0}}.guides .navbar .dropdown-toggle{color:#fff;display:flex;align-items:center;justify-content:space-between}.guides .navbar .dropdown-menu{border-radius:0;box-shadow:none;background-color:rgba(0,0,0,0);border:none;width:100%;margin:0;height:calc(100vh - (78px + 50px))}.guides .navbar .dropdown-menu .col-xs-12,.guides .navbar .dropdown-menu .container,.guides .navbar .dropdown-menu .row{height:100%}.guides .navbar .dropdown-menu:before{content:"";display:block;position:absolute;left:0;top:0;bottom:0;background-color:#4c64d7;width:25%}.guides .navbar .dropdown-list{padding:20px 0;margin:0;list-style:none;background-color:#4c64d7;height:100%}.guides .navbar .dropdown-list>li>a{color:#fff;padding:5px 0;display:block}#media-nav-icon{width:14px;height:12px;position:relative;-webkit-transform:rotate(0);-moz-transform:rotate(0);-o-transform:rotate(0);transform:rotate(0);display:inline-block}#media-nav-icon span{display:block;position:absolute;height:1px;width:100%;background:#fff;border-radius:1px;opacity:1;left:0;-webkit-transform:rotate(0);-moz-transform:rotate(0);-o-transform:rotate(0);transform:rotate(0)}#media-nav-icon span:nth-child(1){top:0}#media-nav-icon span:nth-child(2),#media-nav-icon span:nth-child(3){top:5px}#media-nav-icon span:nth-child(4){top:10px}.content-wrapper{padding:100px 0 50px}.list-group{padding-right:15px}@media (max-width:767px){.list-group{padding-right:0}}.list-group>.list-group-item{background-color:#f1f2f9;border:none;border-radius:0;margin-bottom:5px;color:#0c163b;font-family:sofia-pro,sans-serif;font-weight:700;font-size:15px;line-height:1.5;border-left:5px solid #f1f2f9;padding:10px 25px}.list-group>.list-group-item.heading{font-size:18px;padding:5px 25px}.cta{text-align:center;padding-left:10%}.cta img{margin-bottom:30px}.cta h4{margin-bottom:30px}#top{scroll-margin-top:150px}@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}.cta{position:-webkit-sticky;position:sticky;top:160px}.same_row{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;flex-wrap:wrap}.same_row>[class*=col-]{display:flex;flex-direction:column}
+</style>
+<style>
+.site-content-contain { position: relative; z-index: 1; }
+#footer { position: relative; z-index: 2; }
+.guides .container { width: 1340px; max-width: 90%; }
+
+.guides .navbar { background-color: #3448c5; color: #FFF; border-radius: 0; border: none; margin: 0; position: fixed; width: 100%; z-index: 3; top: 70px; }
+@media (max-width: 1070px) {
+  .guides .navbar { top: 50px; }
+}
+.guides .navbar .dropdown { padding: 10px 15px 10px 0; position: static; }
+@media (max-width: 991px) {
+  .guides .navbar .dropdown { padding-right: 0; }
+}
+.guides .navbar .dropdown-toggle { color: #FFF; display: flex; align-items: center; justify-content: space-between; }
+.guides .navbar .dropdown-menu { border-radius: 0; box-shadow: none; background-color: rgba(0,0,0,0); border: none; width: 100%; margin: 0; pointer-events: none; height: calc(100vh - (78px + 50px)); }
+.guides .navbar .dropdown-menu .container, .guides .navbar .dropdown-menu .row, .guides .navbar .dropdown-menu .col-xs-12 { height: 100%; }
+.guides .navbar .dropdown-menu:before { content: ""; display: block; position: absolute; left: 0; top: 0; bottom: 0; background-color: #4c64d7; width: 25%; }
+.guides .navbar .dropdown-list { padding: 20px 0; margin: 0; list-style: none; background-color: #4c64d7; pointer-events: all; height: 100%; }
+.guides .navbar .dropdown-list > li > a { color: #FFF; padding: 5px 0; display: block; }
+#media-nav-icon {
+  width: 14px;
+  height: 12px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  display: inline-block;
+}
+#media-nav-icon span {
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background: #FFF;
+  border-radius: 1px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+#media-nav-icon span:nth-child(1) {
+  top: 0px;
+}
+#media-nav-icon span:nth-child(2), #media-nav-icon span:nth-child(3) {
+  top: 5px;
+}
+#media-nav-icon span:nth-child(4) {
+  top: 10px;
+}
+.dropdown.open #media-nav-icon span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+.dropdown.open #media-nav-icon span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.dropdown.open #media-nav-icon span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.dropdown.open #media-nav-icon span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.content-wrapper { padding: 100px 0 50px 0; }
+
+.list-group { padding-right: 15px; }
+@media (max-width: 767px) {
+  .list-group { padding-right: 0; }
+}
+.list-group > .list-group-item { background-color: #f1f2f9; border: none; border-radius: 0; margin-bottom: 5px; color: #0C163B; font-family: sofia-pro, sans-serif; font-weight: 700; font-size: 15px; line-height: 1.5; border-left: solid 5px #f1f2f9; padding: 10px 25px; }
+.list-group > .list-group-item.heading { font-size: 18px; padding: 5px 25px; }
+.list-group > .list-group-item.active { border-color: #48c4d8; background-color: #c7cae3; }
+.list-group > .list-group-item:not(.heading):hover { border-color: #48c4d8; background-color: #f1f2f9; color: #0C163B; }
+.list-group > .list-group-item:not(.heading):focus { background-color: #f1f2f9; color: #0C163B; }
+
+.content-wrapper .text h3 { margin-bottom: 30px; scroll-margin-top: 150px; }
+.content-wrapper .text p + ul { margin-top: -25px; }
+.content-wrapper .text ul { padding-left: 15px; margin-bottom: 30px; }
+.content-wrapper .text ul li { margin-bottom: 5px; }
+.content-wrapper .text a { color: #3448c5; text-decoration: underline; }
+.content-wrapper .text .anchor-menu a { text-decoration: none; }
+
+.references { background-color: #f1f2f9; border-radius: 24px; padding: 50px; margin: 50px -50px 0 -50px; }
+.references h2 { margin-bottom: 30px; }
+.references .items { list-style: none; padding: 0; margin: 0; }
+.references .items a { color: #0C163B; text-decoration: underline; }
+
+.cta { text-align: center; padding-left: 10%; }
+.cta img { margin-bottom: 30px; }
+.cta h4 { margin-bottom: 30px; }
+.cta .btn.btn-default { background-color: #3448c5; border-color: #3448c5; padding: 8px 30px; }
+
+
+
+#top { scroll-margin-top: 150px; }
+.c-back-to-top {
+  background-color: #45c5da;
+  border-radius: 50%;
+  color: #fff !important;
+  display: flex;
+  height: 38px;
+  text-decoration: none;
+  width: 38px;
+}
+.c-arrow-container__arrow {
+  height: auto;
+  width: 100%;
+}
+.c-arrow-container__arrow * {
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.5px; // 2
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.cta {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 160px;
+}
+
+.same_row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+}
+.same_row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+/*QUICK TIPS*/
+.top {
+	border-radius: 7.496px 7.496px 0px 0px;
+	background: linear-gradient(340deg, #0C163B 15.12%, #18246F 56.41%, #6F447E 94.45%);
+	position: relative;
+	min-height: 115px;
+	padding-top:20px;
+	padding-left: 30px;
+}
+.quick-tag {
+	color: var(--Greys-White, #FFF);
+	font-family: Inter;
+	font-size: 9.277px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+.quick-tips-parent h5 {
+	color: var(--Greys-White, #FFF);
+	font-family: Inter;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 28px; /* 78.087% */
+	margin-top: 5px;
+	max-width: calc(100% - 150px);
+}        
+.quick-tips-parent img {
+	width: 115px;
+	position: absolute;
+	right: 30px;
+	top: 20px;
+}   	
+.quick-tips-body {
+	padding: 30px;
+	border-radius: 0px 0px 8px 8px;
+	background: var(--Primary-Aegean-Blue-20, #EDF4FF);
+	margin-bottom: 30px;
+}
+.top:after {
+    content: "";
+    position: absolute;
+    background-image: url(https://cloudinary-marketing-res.cloudinary.com/image/upload/v1715050555/rings-guides.svg);
+    width: 86px;
+    height: 90px;
+    display: block;
+    right: 110px;
+    bottom: -20px;
+    background-size: contain;
+}
+
+/*PRO TIP*/
+.pro-tip {
+    background: linear-gradient(340deg, #0C163B 15.12%, #18246F 56.41%, #6F447E 94.45%);
+	border-radius: 8px;
+	margin: 20px 0;
+	padding: 20px 30px;
+	color: white;
+	border-left: 5px solid #48c4d8;
+}
+.content-wrapper .pro-tip h3 {
+	margin-bottom: 0!important;
+}
+.pro-tip h3, .pro-tip a {
+	color: white!important;
+}
+.pro-tip p {
+	margin-bottom: 10px;
+}     
+.pro-tip-top {
+	margin-bottom: 10px;
+	display: flex;
+}
+.pro-tip img {
+	width: 35px;
+	height: auto;
+	margin-right: 10px;
+}     
+
+@media (max-width: 767px) {
+	.quick-tips-parent h5 {
+		max-width: calc(100% - 110px);
+	}
+  	.quick-tips-parent img {
+		width: 60px;
+		position: absolute;
+		right: 30px;
+		top: 20px;
+	}   
+	.top:after {
+		display: none;
+	}
+	.cta {
+		margin-top: 40px;
+	    padding-left: 0%;
+	}
+}
+
+/*CASE STUDY*/
+.case-study-parent {
+	display: flex;
+	margin-bottom: 30px;
+	text-decoration: none!important;
+	color: #000;
+	border-radius: 8px;
+	background: #EDF4FF;
+	transition: 0.3s;
+}
+.case-study-parent img {
+	width: 33.33%;
+    border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	object-fit: cover;
+}
+.case-study-parent .case-study-tag {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	background-color: white;
+	width: fit-content;
+	padding: 5px 10px;
+	border-radius: 5px;
+	margin-bottom: 5px;
+}
+.case-study-parent .text-parent {
+	padding: 20px 30px;
+	width: 100%!important;
+	color: black!important;
+	text-decoration: none!important;
+}
+.case-study-parent .text-parent p {
+	font-weight: 300;
+	margin-bottom: 10px;
+}
+.case-study-parent:hover {
+	transform: scale(1.06);
+}
+.author-job {
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 14px;
+}
+@media (max-width: 767px) {
+	.case-study-parent img {
+		display: none;
+	}
+}
+
+/*HELPFUL RESOURCES*/
+.helpful-resources {
+    background: #EDF4FF;
+    border-radius: 8px;
+    padding: 20px 30px;
+    margin-bottom: 30px;
+}
+.helpful-resources h3, .helpful-resources p {
+	text-align: center;
+}
+.helpful-links {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0px 30px;
+    margin-top: -20px;
+}
+.helpful-links a {
+	color: black!important;
+	font-size: 18px;
+    font-weight: 700;
+    text-decoration: underline;
+    font-style: normal;
+}
+@media (max-width: 767px) {
+	.helpful-links {
+	    display: grid;
+	    grid-template-columns: auto;
+	    text-align: center;
+	}
+}
+
+</style>
+<main id="general">
+  <div id="top" class="js-back-to-top-target" tabindex="-1"></div>
+  <section class="guides archive">
+    <div class="navbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3" style="position: static;">
+            <div class="dropdown">
+              <a href="javascript:;" class="dropdown-toggle" id="guide-types" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Media Guides
+                <span class="media-navbar-toggler-icon">
+        					<span id="media-nav-icon">
+        					  <span></span>
+        					  <span></span>
+        					  <span></span>
+        					  <span></span>
+        					</span>
+        				</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="guide-types">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-3">
+                      <ul class="dropdown-list cluster-title-parent">
+                                                                      <li><a class="cluster-title" href="https://cloudinary.com/guides/ecosystems/image-delivery">Ecosystems</a></li>                                                                                              <li><a class="cluster-title" href="https://cloudinary.com/guides/ai/understanding-enterprise-ai-a-comprehensive-guide">Enterprise</a></li>                                                                                              <li><a class="cluster-title" href="https://cloudinary.com/guides/ai/ai-face-detection">AI</a></li>                                                                                              <li><a class="cluster-title" href="https://cloudinary.com/guides/wordpress-plugin/getting-the-most-out-of-images-in-wordpress">Wordpress Plugin</a></li>                                                                                              <li><a class="cluster-title" href="https://cloudinary.com/guides/image-formats/gif-vs-tiff">Image formats</a></li>                                                                                              <li><a class="cluster-title" href="https://cloudinary.com/guides/video-effects/how-do-you-put-a-watermark-on-a-video">Video effects</a></li>                                                                                              <li><a class="cluster-title" href="https://cloudinary.com/guides/image-effects/understanding-how-to-change-the-aspect-ratio-of-an-image">Image Effects</a></li>                                                                                              <li><a class="cluster-title" href="https://cloudinary.com/guides/marketing-videos/will-video-e-commerce-transform-your-online-business">Marketing Videos</a></li>                                                                                              <li><a class="cluster-title" href="https://cloudinary.com/guides/live-streaming-video/what-is-video-bitrate">Live Streaming Video</a></li>                                                                                              <li><a class="cluster-title" href="https://cloudinary.com/guides/video-formats/video-file-types">Video Formats</a></li>                                                                                              <li><a class="cluster-title" href="https://cloudinary.com/guides/user-generated-content/user-generated-content-marketing-opportunity-of-the-century-and-its-only-the-beginning">User-Generated Content</a></li>                                                                                              <li><a class="cluster-title" href="https://cloudinary.com/guides/e-commerce-platform/customer-experience-marketing">E-Commerce Platform</a></li>                                                                                              <li><a class="cluster-title" href="https://cloudinary.com/guides/web-performance/exploring-video-hosting">Web Performance</a></li>                                                                                              <li><a class="cluster-title" href="https://cloudinary.com/guides/digital-asset-management/digital-asset-library">Digital Asset Management</a></li>                                                                                              <li><a class="cluster-title" href="https://cloudinary.com/guides/front-end-development/react-optimization">Front-End Development</a></li>                                                                                              <li><a class="cluster-title" href="https://cloudinary.com/guides/bulk-image-resize/transform-your-visuals-how-to-resize-an-image-in-javascript">Bulk Image Resize</a></li>                                                                                              <li><a class="cluster-title" href="https://cloudinary.com/guides/responsive-images/reduce-image-size-on-mac-using-preview-and-4-alternative-methods">Responsive Images</a></li>                                                                                              <li><a class="cluster-title" href="https://cloudinary.com/guides/automatic-image-cropping/server-side-rendering-benefits-use-cases-and-best-practices">Automatic Image Cropping</a></li>                                                                    </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-wrapper">
+      <div class="container">
+        <div class="same_row row">
+          <div class="col-xs-12 col-sm-3">
+            <div class="list-group">
+              <span class="list-group-item heading">
+                Front-End Development              </span>
+                                  <a href="https://cloudinary.com/guides/front-end-development/react-optimization" class="list-group-item">React Optimization 101: Tips and Tricks</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/integrating-cloudinary-with-astro" class="list-group-item">Integrating Cloudinary with Astro</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/building-an-image-upload-feature-with-javascript" class="list-group-item">Building an Image Upload Feature with JavaScript</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/mastering-image-alignment-centering-images-with-html-css" class="list-group-item">Mastering Image Alignment: Centering Images with HTML &#038; CSS</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/adding-video-to-your-react-native-app-with-react-native-video" class="list-group-item">Adding Video to Your React Native App with react-native-video</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/html-image-slider-do-it-yourself-and-1-step-image-gallery-widget" class="list-group-item">HTML Image Slider: Do It Yourself and 1-Step Image Gallery Widget</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/how-to-effectively-manage-digital-assets-in-a-php-image-gallery" class="list-group-item">How to Effectively Manage Digital Assets in a PHP Image Gallery</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/introducing-angular-image-editor-your-new-editing-too" class="list-group-item">Introducing Angular Image Editor: Your New Editing Too</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/mastering-javascript-image-annotation" class="list-group-item">Mastering Javascript Image Annotation</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/mastering-javascript-image-popup" class="list-group-item">Mastering JavaScript Image Popup</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/python-video-player-3-free-options-and-a-quick-tutorial" class="list-group-item">Python Video Player: 3 Free Options and a Quick Tutorial</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/image-recognition-machine-learning-use-cases-and-common-algorithms" class="list-group-item">Image Recognition Machine Learning: Use Cases and Common Algorithms</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/html-css-how-to-center-images-vertically-and-horizontally" class="list-group-item">HTML/CSS: How to Center Images Vertically and Horizontally</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/how-to-create-an-image-map" class="list-group-item">How to Create an Image Map</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/understand-css-background-position-with-4-simple-examples" class="list-group-item">Understand CSS Background Position with 4 Simple Examples</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/java-for-image-processing-4-libraries-you-should-know" class="list-group-item">Java for Image Processing: 4 Libraries You Should Know</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/python-video-processing-6-useful-libraries-and-a-quick-tutorial" class="list-group-item">Python Video Processing: 6 Useful Libraries and a Quick Tutorial</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/blur-image-css-two-ways-to-blur-images-for-gorgeous-effects" class="list-group-item">Blur Image CSS: Two Ways to Blur Images for Gorgeous Effects</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/designing-a-video-flipping-app-for-android" class="list-group-item">Designing a Video Flipping App for Android</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/build-an-app-for-embedding-video-watermarks-on-android-devices" class="list-group-item">Build an App for Embedding Video Watermarks on Android Devices</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/change-image-on-hover-with-html-and-css" class="list-group-item">Change Image on Hover with HTML and CSS</a>
+                                      <a href="https://cloudinary.com/guides/image-effects/how-to-align-images-with-css" class="list-group-item">How to Align Images with CSS</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/full-page-background-image-with-css-tutorial-and-5-automation-tips" class="list-group-item">Full Page Background Image with CSS: Tutorial and 5 Automation Tips</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/using-css-to-scale-page-elements-and-a-better-way-to-scale-your-images" class="list-group-item">Using CSS to Scale Page Elements and a Better Way to Scale Your Images</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/css-background-image-quick-tutorial-and-3-automation-tips" class="list-group-item">CSS Background Image: Quick Tutorial and 3 Automation Tips</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/featured-image-best-practices-to-feature-images-on-your-website" class="list-group-item">Featured Image: Best Practices to Feature Images on Your Website</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/image-gallery-websites-tips-and-tricks-for-a-stunning-image-gallery" class="list-group-item">Image Gallery Websites: Tips and Tricks for a Stunning Image Gallery</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/6-ways-to-stretch-a-background-image-with-css" class="list-group-item">6 Ways to Stretch a Background Image with CSS</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/auto-cropping-for-images-and-video-features-best-practices" class="list-group-item">Auto Cropping for Images and Video: Features &#038; Best Practices</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/flac-vs-wav-4-key-differences-and-how-to-choose" class="list-group-item">FLAC vs. WAV: 4 Key Differences and How to Choose</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/converting-audio-to-video-a-practical-guide" class="list-group-item">Converting Audio to Video: A Practical Guide</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/flac-vs-aiff-5-key-differences-and-how-to-choose" class="list-group-item">FLAC vs. AIFF: 5 Key Differences and How to Choose</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/flac-vs-mqa-5-key-differences-and-how-to-choose" class="list-group-item">FLAC vs. MQA: 5 Key Differences and How to Choose</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/converting-wav-files-to-ogg" class="list-group-item">Converting WAV Files To OGG</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/the-ultimate-guide-on-converting-ogg-files-to-wav" class="list-group-item">The Ultimate Guide On Converting OGG Files To WAV</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/sound-choices-flac-vs-mp3" class="list-group-item">Sound Choices: FLAC vs. MP3</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/aac-vs-mp3-the-future-of-audio-files" class="list-group-item">AAC vs MP3 &#8211; The Future of Audio Files</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/all-about-aiff-and-how-it-compares-to-wav-and-mp3" class="list-group-item">All about AIFF and how it compares to WAV and MP3</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/integrating-cloudinary-with-netlify" class="list-group-item">Integrating Cloudinary with Netlify</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/integrating-cloudinary-with-svelte-and-sveltekit" class="list-group-item">Integrating Cloudinary with Svelte and SvelteKit</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/integrating-cloudinary-with-nuxt" class="list-group-item">Integrating Cloudinary with Nuxt</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/integrating-cloudinary-with-gatsby" class="list-group-item">Integrating Cloudinary with Gatsby</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/file-upload-as-a-service-how-it-works-and-5-leading-solutions" class="list-group-item">File Upload as a Service: How It Works and 5 Leading Solutions</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/native-mobile-app-development" class="list-group-item">Native Mobile App Development</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/creative-uses-for-css-inner-border-and-3-ways-to-set-a-border" class="list-group-item">Creative Uses for CSS Inner Border and 3 Ways to Set a Border</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/integrating-cloudinary-with-next-js" class="list-group-item">Integrating Cloudinary with Next.js</a>
+                                      <a href="https://cloudinary.com/guides/front-end-development/front-end-development-the-complete-guide" class="list-group-item">Front-End Development: The Complete Guide</a>
+                              </div>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <div class="title">
+              <h1>CSS Background Image: Quick Tutorial and 3 Automation Tips</h1>
+            </div>
+            <div class="text">
+              <p><img class="cld-responsive" src="https://cloudinary-marketing-res.cloudinary.com/images/w_1000,c_scale/v1708450497/css_background_image_header/css_background_image_header-png?_i=AA" alt="css background image" width="100%" /></p>
+<p>The <code>background-image</code> property in CSS allows you to set an image as the background for any HTML element. This property can add a single image or multiple images or even create an image gradient as the background.</p>
+<p>In CSS, you can control the position of the background image, whether or not the image should be repeated, the scrolling behavior of the image, and much more. Let&#8217;s look deeper into the syntax to understand how you can manipulate the CSS background image property to our advantage.</p>
+<div class="alert alert-info" role="alert">
+<p><strong>Before we start</strong></p>
+<p>Using background images? There’s an easy, automatic way to resize, crop, and make them responsive</p>
+<p>Cloudinary is a cloud-based image management platform with a generous free plan. Cloudinary can:</p>
+<p>&nbsp;</p>
+<ul>
+<li>Resize your images on the server side so they load faster for users</li>
+<li>Automatically crop images with AI-based object and face recognition</li>
+<li>Expand images and fill in missing details with generative AI</li>
+<li>Automatically adapt images to responsive layouts</li>
+</ul>
+<p>You can <a href="https://cloudinary.com/users/register_free">sign up free</a> and try it for yourself or learn more below.</p>
+</div>
+<p><span style="font-weight: 400">This is part of a series of articles about </span><a href="https://cloudinary.com/blog/working_with_css_images"><span style="font-weight: 400">CSS Image</span></a></p>
+<p><b>In this article:</b></p>
+<ul>
+<li style="font-weight: 400"><a href="#background-image-syntax-in-css"><span style="font-weight: 400">Background Image Syntax in CSS</span></a></li>
+<li style="font-weight: 400"><a href="#working-with-css-background-images"><span style="font-weight: 400">Working with CSS Background Images</span></a>
+<ul>
+<li style="font-weight: 400"><a href="#set-background-position"><span style="font-weight: 400">Set Background Position</span></a></li>
+<li style="font-weight: 400"><a href="#background-image-repeat"><span style="font-weight: 400">Background Image Repeat</span></a></li>
+<li style="font-weight: 400"><a href="#multiple-backgrounds"><span style="font-weight: 400">Multiple Backgrounds</span></a></li>
+<li style="font-weight: 400"><a href="#resizing-and-attachment-of-background-image"><span style="font-weight: 400">Resizing and Attachment of Background Image</span></a></li>
+<li style="font-weight: 400"><a href="#background-gradients"><span style="font-weight: 400">Background Gradients</span></a></li>
+<li style="font-weight: 400"><a href="#using-transparency"><span style="font-weight: 400">Using Transparency</span></a></li>
+</ul>
+</li>
+<li style="font-weight: 400"><a href="#3-tips-for-automating-background-images"><span style="font-weight: 400">3 Tips for Automating Background Images</span></a>
+<ul>
+<li style="font-weight: 400"><a href="#limit-images-to-specific-dimensions"><span style="font-weight: 400">Limit Images to Specific Dimensions</span></a></li>
+<li style="font-weight: 400"><a href="#crop-images-with-auto-gravity"><span style="font-weight: 400">Crop Images with Auto Gravity</span></a></li>
+<li style="font-weight: 400"><a href="#expand-images-with-ai-powered-generative-fill"><span style="font-weight: 400">Expand Images with AI-Powered Generative Fill</span></a></li>
+</ul>
+</li>
+</ul>
+<h2 id="background-image-syntax-in-css">Background Image Syntax in CSS</h2>
+<p>The generic syntax of the CSS <code>background-image</code> property is:</p>
+<pre>background-image: url('path_to_your_image');</pre>
+<p>With this syntax, the &#8216;<code>url()</code>&#8216; function specifies the path to the image. The image path can either be an absolute path or a relative path.</p>
+<p>With this syntax, the &#8216;<code>url()</code>&#8216; function specifies the path to the image. The image path can either be an absolute path or a relative path.</p>
+<p>The CSS <code>background-image</code> property also allows you to specify multiple images as backgrounds layered on top of each other. The syntax for multiple images is:</p>
+<pre>background-image: url('path_to_first_image'), url('path_to_second_image');</pre>
+<p>In this, each image is separated by a comma. The first image in the list is the topmost layer, and the rest of the images follow in the order specified.</p>
+<p><a href="https://cloudinary.com/users/register_free"><img class="cld-responsive" src="https://cloudinary-marketing-res.cloudinary.com/images/w_800,c_scale/v1708450687/css_background_image_main_ad/css_background_image_main_ad-gif?_i=AA" alt="css background image" width="100%" /></a></p>
+<h2 id="working-with-css-background-images">Working with CSS Background Images</h2>
+<h3 id="set-background-position">Set Background Position</h3>
+<p>The <code>background-position</code> property in CSS allows you to position a background image exactly where you want it. It can take two values representing the horizontal and vertical positions, respectively. For instance, <code>background-position: center center;</code> will position the background image in the middle of the container.</p>
+<pre>body {
+  background-image: url('image.jpg');
+  background-position: center center;
+}
+</pre>
+<p><img class="cld-responsive" src="https://cloudinary-marketing-res.cloudinary.com/images/w_1000,c_scale/v1708450498/css_background_image_1/css_background_image_1-png?_i=AA" alt="css background image" width="100%" /></p>
+<p>In the example above, the background image is vertically and horizontally centered. You can also use keywords like top, bottom, left, and right to position the image or specific measurements like pixels or percentages.</p>
+<h3 id="background-image-repeat">Background Image Repeat</h3>
+<p>The <code>background-repeat</code> property is one of the most commonly used properties when working with CSS background images. A background image will repeat itself horizontally and vertically by default to fill the entire container. However, this may not always be the effect you’re looking for.</p>
+<pre>body {
+  background-image: url('image.jpg');
+  background-repeat: no-repeat;
+}
+</pre>
+<p><img class="cld-responsive" src="https://cloudinary-marketing-res.cloudinary.com/images/w_1000,c_scale/v1708450499/css_background_image_2/css_background_image_2-png?_i=AA" alt="css background image" width="100%" /></p>
+<p>In this example, our background image isn’t repeated. Setting the <code>background-repeat</code> property to <code>no-repeat</code> prevents the image from repeating itself. Other possible values for this property include <code>repeat-x</code> (repeat horizontally), <code>repeat-y</code> (repeat vertically), or <code>repeat</code> (repeat in both directions).</p>
+<h3 id="multiple-backgrounds">Multiple Backgrounds</h3>
+<p>CSS allows you to add multiple background images to a single element. This can be achieved by specifying each background image in the <code>background-image</code> property, separated by a comma. The first image in the list will be the one closest to the viewer, and the last one will be the furthest.</p>
+<pre>body {
+  background-image: url('image1.jpg'), url('image2.jpg');
+  background-position: center, top;
+  background-repeat: no-repeat;
+}
+</pre>
+<p><img class="cld-responsive" src="https://cloudinary-marketing-res.cloudinary.com/images/w_1000,c_scale/v1708450501/css_background_image_3/css_background_image_3-png?_i=AA" alt="css background image" width="100%" /></p>
+<p>In this example, <code>image1.jpg</code> will be positioned at the element&#8217;s center and will not be repeated. <code>image2.jpg</code> will be placed at the top and will repeat itself to fill the remaining space of the component. This feature can be useful when creating complex designs or effects.</p>
+<h3 id="resizing-and-attachment-of-background-image">Resizing and Attachment of Background Image</h3>
+<p>The <code>background-size</code> property in CSS allows you to control the size of the background image. It can take values like <code>cover</code> (which resizes the background image to cover the entire container), <code>contain</code> (which resizes the image to the largest size such that its width and height can fit inside the area), or specific dimensions.</p>
+<pre>body {
+  background-image: url('image.jpg');
+  background-size: cover;
+}
+</pre>
+<p><img class="cld-responsive" src="https://cloudinary-marketing-res.cloudinary.com/images/w_1000,c_scale/v1708450500/css_background_image_4/css_background_image_4-png?_i=AA" alt="css background image" width="100%" /></p>
+<p>You can also control whether a background image scrolls with the rest of the page or is fixed with the <code>background-attachment</code> property. For instance, <code>background-attachment: fixed;</code> will create a &#8220;parallax&#8221; effect where the background image does not move with the rest of the page.</p>
+<p><strong><em>Learn more in our guide to <a href="https://cloudinary.com/guides/front-end-development/6-ways-to-stretch-a-background-image-with-css">stretching background images</a></em></strong></p>
+<h3 id="background-gradients">Background Gradients</h3>
+<p>Another feature of CSS background images is the ability to create gradients, a smooth transition between two or more colors. CSS offers three types:</p>
+<ul>
+<li>Linear &#8211; Colors shift from one to another based on the direction (up, down, left, right, or diagonally).</li>
+<li>Radial &#8211; A central point is defined, where the colors will shift outwards from that point.</li>
+<li>Conic &#8211; They still share a central point, but colors are rotated around that point instead of shifting outwards.</li>
+</ul>
+<pre>body {
+  background-image: linear-gradient(red, yellow);
+}
+</pre>
+<p>In this example, our background image will be a gradient transitioning from red to yellow. You can also create radial gradients with the <code>radial-gradient()</code> function or combine multiple gradients for more complex effects.</p>
+<h3 id="using-transparency">Using Transparency</h3>
+<p>The opacity of a background image can be controlled with the <code>background-color</code> property in conjunction with RGBA color values. An RGBA color value includes the red, green, and blue components and an alpha component representing transparency.</p>
+<pre>body {
+  background-image: url('image.jpg');
+  background-color: rgba(255, 255, 255, 0.5);
+}
+</pre>
+<p>In the example above, a white (<code>255, 255, 255</code>) semi-transparent (<code>0.5</code>) background color is applied on top of the background image. This can be useful when you want to overlay text or other content on top of a background image and ensure it&#8217;s still readable.</p>
+<h2 id="3-tips-for-automating-background-images">3 Tips for Automating Background Images</h2>
+<p>When using background images, it can be difficult to manually rescale and crop them, especially in a responsive design. With Cloudinary, you can completely automate the process and even expand images by filling in the missing details with generative AI.</p>
+<p>Cloudinary is a cloud-based media management service with a <a href="https://cloudinary.com/pricing">generous free plan</a>, simplifying working with images and videos. It allows users to perform various operations on their media files, including resizing, cropping, and optimization, through a simple URL-based system or via SDKs for all popular programming languages.</p>
+<p>URL parameters are the key-value pairs included in the URL that instruct Cloudinary on how to manipulate and deliver the requested image or video. Using these parameters, you can easily apply a wide range of transformations to your files without needing manual intervention or additional server-side processing.</p>
+<p>A major advantage of using Cloudinary for image resizing is that the service dynamically resizes images on the server side before they are delivered to users, solving the problems of CSS-based resizing.</p>
+<p>Let’s see how to effortlessly resize and rescale background images with Cloudinary. In order to try out the instructions below with your own photos, <a href="https://cloudinary.com/users/register_free">sign up for a free Cloudinary account</a> and upload the image to Cloudinary.</p>
+<h3 id="limit-images-to-specific-dimensions">1. Limit Images to Specific Dimensions</h3>
+<p>To limit the size of an image to specific dimensions, we can change the <code>crop</code> value (<code>c</code> in URLs) to have a limit (<code>c_limit</code>).</p>
+<p>Below is an image that’s been resized from 850 x 565 px. to 70 x 70 px. with the limit option. Due to the preserved aspect ratio, this display is 70 x 47 px.</p>
+<pre>https://res.cloudinary.com/demo/image/upload/w_70,h_70,c_limit/cashew_chicken.jpg</pre>
+<p><img width="70" height="47" class="alignnone size-medium wp-image-32535" src="data:image/svg+xml;utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;70&quot; height=&quot;47&quot;&gt;&lt;rect width=&quot;100%&quot; height=&quot;100%&quot;&gt;&lt;animate attributeName=&quot;fill&quot; values=&quot;rgba(153,153,153,0.5);rgba(153,153,153,0.1);rgba(153,153,153,0.5)&quot; dur=&quot;2s&quot; repeatCount=&quot;indefinite&quot; /&gt;&lt;/rect&gt;&lt;/svg&gt;" alt="css background image" data-public-id="css_background_image_5.png" data-format="png" data-transformations="c_scale,w_auto,dpr_auto/f_auto,q_auto" data-version="1708450500" data-responsive="1" data-size="70 47" data-delivery="upload" onload="CLDBind(this)" /></p>
+<p><a href="https://cloudinary.com/blog/image_resizing_manually_with_css_and_automatically_with_cloudinary#limit_images_to_specific_dimensions">Learn more in the Cloudinary Cookbook</a></p>
+<h3 id="crop-images-with-auto-gravity">2. Crop Images With Auto Gravity</h3>
+<p>To focus on specific details—faces, objects, color contrasts—while resizing images, we can crop the images with Cloudinary’s intelligent auto-gravity features. The parameter to set is <code>gravity</code> (<code>g</code> in URLs), which offers an auto value (<code>g_auto</code>) that intelligently crops according to your image’s content.</p>
+<p>Cloudinary automatically crops images with content-aware, AI-based features by selecting faces, individual features, or areas of interest. Look at how Cloudinary uses the <code>g_auto</code> setting to crop the most interesting area, as determined by AI:</p>
+<p><img class="cld-responsive" src="https://cloudinary-marketing-res.cloudinary.com/images/w_1000,c_scale/v1708450500/css_background_image_6/css_background_image_6-png?_i=AA" alt="css background image" width="100%" /></p>
+<p>Another example of avoiding irrelevant objects instead of the product in product images taking center stage is defining the product as the focus. The picture on the right below has the backpack in focus.</p>
+<p>This code uses <code>g_auto:classic</code></p>
+<pre>https://res.cloudinary.com/demo/image/upload/c_thumb,g_auto:classic,h_175,w_175/v1551428220/veducate/spencer-backman-482079-unsplash.jpg</pre>
+<p><img width="175" height="175" class="alignnone size-medium wp-image-32534" src="data:image/svg+xml;utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;175&quot; height=&quot;175&quot;&gt;&lt;rect width=&quot;100%&quot; height=&quot;100%&quot;&gt;&lt;animate attributeName=&quot;fill&quot; values=&quot;rgba(153,153,153,0.5);rgba(153,153,153,0.1);rgba(153,153,153,0.5)&quot; dur=&quot;2s&quot; repeatCount=&quot;indefinite&quot; /&gt;&lt;/rect&gt;&lt;/svg&gt;" alt="css background image" data-public-id="css_background_image_7.jpg" data-format="jpg" data-transformations="c_scale,w_auto,dpr_auto/f_auto,q_auto" data-version="1708450500" data-responsive="1" data-size="175 175" data-delivery="upload" onload="CLDBind(this)" /></p>
+<p>This code uses <code>g_auto:backpack</code> to focus on the backpack:</p>
+<pre>https://res.cloudinary.com/demo/image/upload/c_thumb,g_auto:backpack,h_175,w_175/v1551428220/veducate/spencer-backman-482079-unsplash.jpg</pre>
+<p><img width="175" height="175" class="alignnone size-medium wp-image-32536" src="data:image/svg+xml;utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;175&quot; height=&quot;175&quot;&gt;&lt;rect width=&quot;100%&quot; height=&quot;100%&quot;&gt;&lt;animate attributeName=&quot;fill&quot; values=&quot;rgba(153,153,153,0.5);rgba(153,153,153,0.1);rgba(153,153,153,0.5)&quot; dur=&quot;2s&quot; repeatCount=&quot;indefinite&quot; /&gt;&lt;/rect&gt;&lt;/svg&gt;" alt="css background image" data-public-id="css_background_image_8.jpg" data-format="jpg" data-transformations="c_scale,w_auto,dpr_auto/f_auto,q_auto" data-version="1708450502" data-responsive="1" data-size="175 175" data-delivery="upload" onload="CLDBind(this)" /></p>
+<p><a href="https://cloudinary.com/documentation/gravity_transformations_tutorial#:~:text=What%20is%20gravity%2Dspecific%20cropping%3F,-0%3A07&amp;text=By%20applying%20the%20gravity%20transformation,or%20padding%20options%20are%20applied.">Learn more about gravity-based cropping</a> in our tutorial</p>
+<h3 id="expand-images-with-ai-powered-generative-fill">3. Expand Images with AI-Powered Generative Fill</h3>
+<p>Generative Fill works with Cloudinary’s padding crop modes and leverages the new <code>gen_fill</code> option for backgrounds (<code>b_gen_fill</code> for URLs). Combining these options allows users to achieve a visually pleasing fill that seamlessly matches the original image. You can even add a natural language prompt to the <code>gen_fill</code> command to specify what the generated background should contain.</p>
+<p>Let’s see an example of generative fill. Here is an original image with a width of 600 and a height of 900:</p>
+<p><img class="cld-responsive" src="https://cloudinary-marketing-res.cloudinary.com/images/w_1000,c_scale/v1708450503/css_background_image_9/css_background_image_9-jpg?_i=AA" alt="css background image" width="100%" /></p>
+<p><i>Original image, 600×900</i></p>
+<p>Here is how we use <code>c_pad</code> to resize the image while maintaining aspect ratio and visibility of the original. Then, Cloudinary adds in new areas by using their generative fill. This code pads the original to a 1:1 aspect ratio.</p>
+<pre>https://res.cloudinary.com/demo/image/upload/b_gen_fill,c_pad,ar_1:1/v1687525630/ai/woman_model.jpg</pre>
+<p><img class="cld-responsive" src="https://cloudinary-marketing-res.cloudinary.com/images/w_1000,c_scale/v1708450498/css_background_image_10/css_background_image_10-jpg?_i=AA" alt="css background image" width="100%" /></p>
+<p>Here, we can use <code>c_lpad</code> to scale down the image with padding if it is larger than the specified width/height limit, maintaining aspect ratio and visibility. The new areas will be generated around the scaled image as needed. Here, we’ve created a 400×800 image from the original – the original is shrunk to fit, and new imagery is inserted, including feet!</p>
+<pre>https://res.cloudinary.com/demo/image/upload/c_lpad,h_800,w_400,b_gen_fill/v1687525630/ai/woman_model.jpg</pre>
+<p><img class="cld-responsive" src="https://cloudinary-marketing-res.cloudinary.com/images/w_1000,c_scale/v1708450497/css_background_image_11/css_background_image_11-jpg?_i=AA" alt="css background image" width="100%" /></p>
+<p>For more information on generative fill, check out the <a href="https://cloudinary.com/documentation/transformation_reference#b_gen_fill">documentation</a> or try the <a href="https://ai.cloudinary.com/demos/fill">demo</a>.</p>
+<p><strong><a href="https://cloudinary.com/users/register_free">Sign up for a free Cloudinary account</a> and resize images automatically with these features and more.</strong></p>
+            </div>
+
+                          <div class="quick-tips-parent">          
+              	<div class="top">
+              		<div class="quick-tag">QUICK TIPS</div>
+              		<h5>Colby Fayock</h5>
+
+              		<svg id="cld-logo-white" style="width: 80px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 96.77"><title>Cloudinary Logo</title><defs><style>.cls-1-footer{fill:#ffffff;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1-footer" d="M160.53,30.41a17.14,17.14,0,0,1,13.56,6.7.69.69,0,0,0,1,.11l5.71-4.55a.71.71,0,0,0,.11-1,26,26,0,0,0-20.61-10.13c-14.91,0-27,12.85-27,28.65s12.13,28.65,27,28.65A25.85,25.85,0,0,0,180.9,68.72a.69.69,0,0,0-.12-1l-5.7-4.5a.71.71,0,0,0-1,.11A17.26,17.26,0,0,1,160.53,70c-10.19,0-18.16-8.7-18.16-19.79S150.34,30.41,160.53,30.41Z"></path><path class="cls-1-footer" d="M188.27,19.91h7.16a.71.71,0,0,1,.71.71V77.4a.7.7,0,0,1-.7.7h-7.16a.71.71,0,0,1-.71-.71V20.62A.7.7,0,0,1,188.27,19.91Z"></path><path class="cls-1-footer" d="M220.54,39.55c-9.49,0-19.09,6.72-19.09,19.57,0,11.29,8.21,19.81,19.09,19.81s19.17-8.52,19.17-19.81S231.47,39.55,220.54,39.55Zm10.53,19.57c0,6.52-4.53,11.44-10.53,11.44S210.1,65.64,210.1,59.12s4.49-11.2,10.44-11.2S231.07,52.73,231.07,59.12Z"></path><path class="cls-1-footer" d="M278.3,40.37h-7.16a.7.7,0,0,0-.71.7v19c0,7.42-5.12,10.05-9.51,10.05-3.88,0-7.79-2.93-7.79-9.48V41.07a.7.7,0,0,0-.71-.7h-7.16a.7.7,0,0,0-.7.7v20.5c0,11.25,5.09,17.44,14.34,17.44,3.36,0,8.8-1.93,10.84-6.19l.69.14V77.4a.71.71,0,0,0,.71.71h7.16a.71.71,0,0,0,.71-.71V41.07A.7.7,0,0,0,278.3,40.37Z"></path><path class="cls-1-footer" d="M322.27,19.91H315.1a.7.7,0,0,0-.7.71V46l-.44-.7c-2.18-3.51-6.87-5.78-11.95-5.78-8.76,0-17.62,6.75-17.62,19.65,0,11.25,7.61,19.73,17.69,19.73,3.84,0,9.25-1.54,11.88-5.86l.44-.72V77.4a.7.7,0,0,0,.7.71h7.17a.7.7,0,0,0,.7-.71V20.62A.7.7,0,0,0,322.27,19.91Zm-8,39.21a11,11,0,0,1-10.75,11.36c-5.86,0-10.45-5-10.45-11.36s4.59-11.2,10.45-11.2A11,11,0,0,1,314.24,59.12Z"></path><path class="cls-1-footer" d="M333,40.37h7.16a.7.7,0,0,1,.7.7V77.4a.7.7,0,0,1-.7.7H333a.71.71,0,0,1-.71-.71V41.07A.71.71,0,0,1,333,40.37Z"></path><path class="cls-1-footer" d="M336.61,21.06a5.57,5.57,0,0,0-5.69,5.57,5.64,5.64,0,0,0,5.69,5.58,5.54,5.54,0,0,0,5.61-5.58A5.48,5.48,0,0,0,336.61,21.06Z"></path><path class="cls-1-footer" d="M370.35,39.55c-3.14,0-8.72,1.69-10.85,6.19l-.69-.14V41.07a.7.7,0,0,0-.71-.7h-7.16a.7.7,0,0,0-.7.7V77.4a.7.7,0,0,0,.7.71h7.16a.71.71,0,0,0,.71-.71v-19c0-7.36,5.12-10,9.51-10,3.88,0,7.79,2.91,7.79,9.4V77.4a.71.71,0,0,0,.71.71H384a.71.71,0,0,0,.71-.71V56.91C384.69,45.72,379.59,39.55,370.35,39.55Z"></path><path class="cls-1-footer" d="M427.48,40.37h-7.16a.7.7,0,0,0-.71.7v5l-.43-.7c-2.19-3.51-6.88-5.78-12-5.78-8.75,0-17.62,6.75-17.62,19.65,0,11.25,7.61,19.73,17.7,19.73,3.83,0,9.24-1.54,11.88-5.86l.43-.72V77.4a.71.71,0,0,0,.71.71h7.16a.7.7,0,0,0,.7-.71V41.07A.7.7,0,0,0,427.48,40.37Zm-8,18.75A11,11,0,0,1,408.7,70.48c-5.86,0-10.44-5-10.44-11.36s4.58-11.2,10.44-11.2A11,11,0,0,1,419.46,59.12Z"></path><path class="cls-1-footer" d="M460.15,40.5a13.66,13.66,0,0,0-5.14-1c-4.76,0-8.22,2.85-10,8.25l-.64-.09V41.07a.7.7,0,0,0-.71-.7h-7.16a.7.7,0,0,0-.71.7V77.4a.71.71,0,0,0,.71.71h7.24a.7.7,0,0,0,.7-.71V65c0-14.8,5.91-17,9.44-17a11,11,0,0,1,4.33.9.72.72,0,0,0,.61,0,.7.7,0,0,0,.36-.48l1.42-7.11A.71.71,0,0,0,460.15,40.5Z"></path><path class="cls-1-footer" d="M499.88,40.68a.69.69,0,0,0-.59-.31h-7.71a.72.72,0,0,0-.66.45L481.59,65l-9.42-24.18a.72.72,0,0,0-.66-.45h-7.86a.69.69,0,0,0-.58.31.7.7,0,0,0-.07.66l14,34.38-7.73,20.09a.71.71,0,0,0,.66,1h7.5a.69.69,0,0,0,.65-.45l21.86-55A.69.69,0,0,0,499.88,40.68Z"></path><path class="cls-1-footer" d="M97.91,28.11A40.38,40.38,0,0,0,59.73,0,39.62,39.62,0,0,0,24.6,20.87a29.88,29.88,0,0,0-7.21,56.56l.75.34h.05v-8.5a22.29,22.29,0,0,1,9.29-41.16l2.1-.22L30.5,26A32.15,32.15,0,0,1,59.73,7.57a32.7,32.7,0,0,1,31.55,25L92,35.43l3,0a18.53,18.53,0,0,1,18.15,18.46c0,7.05-4.07,12.82-11,15.74v8.06l.5-.16c11.14-3.65,18.06-12.71,18.06-23.64A26.19,26.19,0,0,0,97.91,28.11Z"></path><path class="cls-1-footer" d="M45.07,76.79l1.66,1.66a.33.33,0,0,1-.23.56H33.4a6,6,0,0,1-6-6V47.57a.33.33,0,0,0-.33-.33H24.27a.33.33,0,0,1-.24-.56L35.15,35.56a.33.33,0,0,1,.47,0L46.73,46.68a.33.33,0,0,1-.23.56H43.66a.34.34,0,0,0-.34.33v25A6,6,0,0,0,45.07,76.79Z"></path><path class="cls-1-footer" d="M69.64,76.79l1.67,1.66a.33.33,0,0,1-.24.56H58a6,6,0,0,1-6-6V54a.34.34,0,0,0-.33-.34H48.84a.33.33,0,0,1-.23-.56L59.72,42a.33.33,0,0,1,.47,0L71.31,53.08a.33.33,0,0,1-.24.56H68.23a.34.34,0,0,0-.33.34V72.57A6,6,0,0,0,69.64,76.79Z"></path><path class="cls-1-footer" d="M94.22,76.79l1.66,1.66a.33.33,0,0,1-.23.56H82.54a6,6,0,0,1-6-6V60.38a.33.33,0,0,0-.33-.33H73.41a.33.33,0,0,1-.23-.57L84.3,48.37a.32.32,0,0,1,.46,0L95.88,59.48a.33.33,0,0,1-.23.57H92.8a.33.33,0,0,0-.33.33V72.57A6,6,0,0,0,94.22,76.79Z"></path></g></g></svg>
+
+              		<img width="800" height="800" src="data:image/svg+xml;utf8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;800&quot;&gt;&lt;rect width=&quot;100%&quot; height=&quot;100%&quot;&gt;&lt;animate attributeName=&quot;fill&quot; values=&quot;rgba(153,153,153,0.5);rgba(153,153,153,0.1);rgba(153,153,153,0.5)&quot; dur=&quot;2s&quot; repeatCount=&quot;indefinite&quot; /&gt;&lt;/rect&gt;&lt;/svg&gt;" alt="Colby Fayock" data-public-id="website_2021/colby-fayock.jpeg" class="wp-post-0 wp-image-38100" data-format="jpeg" data-transformations="c_scale,w_auto,dpr_auto/f_auto,q_auto" data-version="1724505012" data-responsive="1" data-size="800 800" data-delivery="upload" onload="CLDBind(this)" />
+              	</div>                 
+              	<div class="quick-tips-body">
+                  <p>In my experience, here are tips that can help you better manage background images using CSS and automation tools:</p>
+<ol>
+<li><strong>Use <code>background-size: cover</code> for full-screen background images</strong><br />
+To ensure your background image always covers the entire screen or container without distortion, use <code>background-size: cover;</code>. This makes sure the image scales to fit, but beware it might crop some parts, so choose images where this won&#8217;t matter.</li>
+<li><strong>Leverage <code>background-position</code> for responsive alignment</strong><br />
+Use <code>background-position</code> strategically to focus on the most important parts of the image. For example, <code>background-position: center;</code> works for most cases, but for images with key elements in specific areas, adjust accordingly (e.g., <code>top left</code>, <code>bottom center</code>).</li>
+<li><strong>Combine <code>background-attachment: fixed</code> for parallax effects</strong><br />
+To create a more engaging user experience, apply <code>background-attachment: fixed;</code> to keep the background in place while users scroll through the content. This creates a subtle parallax effect and adds depth to the page design.</li>
+<li><strong>Optimize image loading with lazy loading</strong><br />
+Implement lazy loading for background images, especially for large images that don’t appear immediately when the page loads. This will improve page speed and prevent unnecessary bandwidth consumption, boosting performance and user experience.</li>
+<li><strong>Generate responsive background images automatically</strong><br />
+Use Cloudinary to automate image resizing for different devices. By dynamically resizing the background images server-side, you can serve the most optimized version for each screen resolution, improving load times without manual intervention.</li>
+<li><strong>Crop images using auto-gravity for better focus</strong><br />
+If the focal point of the image is important (e.g., a product or a person), use Cloudinary’s <code>g_auto</code> feature to automatically crop the image around the most significant area. This ensures the focus remains clear on all screen sizes.</li>
+<li><strong>Apply AI-powered generative fill for seamless padding</strong><br />
+For awkwardly cropped background images, Cloudinary&#8217;s generative fill can automatically extend images by adding AI-generated padding. This can ensure your background images fit perfectly while keeping the design seamless and aesthetically pleasing.</li>
+<li><strong>Use multiple backgrounds for layered effects</strong><br />
+Combine multiple background images for a richer design. Using CSS, you can layer backgrounds (e.g., an image and a gradient) to add depth and detail, which is useful for creating visually complex, yet performant, designs.</li>
+<li><strong>Consider performance and compression</strong><br />
+Always optimize background images with compression tools or services like Cloudinary’s <code>q_auto</code> to balance quality and performance. Compressed images load faster, improving both user experience and SEO ranking.</li>
+<li><strong>Test on multiple screen sizes and resolutions</strong><br />
+Ensure your background images are responsive and look sharp across devices by using tools like Cloudinary’s <code>image-set()</code> for delivering different resolutions (1x, 2x, 3x). This ensures high-DPI screens receive high-quality images, and lower resolution screens get optimized versions.</li>
+</ol>
+                </div>
+              </div>
+            
+			
+
+            
+            <!-- Last Modified date -->
+                        <div class="updated" style="font-style: italic;">Last updated: Aug 24, 2024</div>
+          </div>
+          <div class="col-xs-12 col-sm-3">
+                     
+              <div class="cta">
+              	              	<a href="https://cloudinary.com/users/register_free" style="display: block;" target="">              		
+
+              		   
+						<video loop autoplay muted src="https://cloudinary-marketing-res.cloudinary.com/image/upload/f_auto,q_auto/v1683754802/Front_end_development_side.mp4"></video>
+
+						       
+
+                </a>
+                                <div class="content">
+                  <h4></h4>
+                                  </div>
+              </div>
+                      </div>
+        </div>
+        <div style="display: flex; justify-content: flex-end;">
+          <a href="#top" class="c-back-to-top js-back-to-top c-arrow-container">
+            <svg viewBox="0 0 40 40" class="c-arrow-container__arrow" width="40" height="40" aria-hidden="true">
+              <polyline points="10,25 20,15 30,25 "/>
+            </svg>
+            <span class="sr-only">Back to top</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<script>
+jQuery(document).ready(function() {
+  // add active class to nav
+	var url = window.location.href;
+	jQuery('.list-group a[href="'+ url +'"]').addClass('active');
+	jQuery('.list-group a').filter(function() {
+		return this.href == url;
+	}).addClass('active');
+});
+</script>
+
+</div>
+</div>
+<footer id="footer" class="site-footer" role="contentinfo">
+   <div class="container-fluid">
+      <div class="row footer-holder">
+        <div class="col-xs-12">
+          <div class="widgets">
+            <div class="col footer-logo">
+               <a href="/">
+               <svg id="cld-footer-logo" style="height: 30px; width: 160px; margin-bottom: -10px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 96.77"><title>Cloudinary Logo</title><defs><style>.cls-1-footer{fill:#ffffff;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1-footer" d="M160.53,30.41a17.14,17.14,0,0,1,13.56,6.7.69.69,0,0,0,1,.11l5.71-4.55a.71.71,0,0,0,.11-1,26,26,0,0,0-20.61-10.13c-14.91,0-27,12.85-27,28.65s12.13,28.65,27,28.65A25.85,25.85,0,0,0,180.9,68.72a.69.69,0,0,0-.12-1l-5.7-4.5a.71.71,0,0,0-1,.11A17.26,17.26,0,0,1,160.53,70c-10.19,0-18.16-8.7-18.16-19.79S150.34,30.41,160.53,30.41Z"></path><path class="cls-1-footer" d="M188.27,19.91h7.16a.71.71,0,0,1,.71.71V77.4a.7.7,0,0,1-.7.7h-7.16a.71.71,0,0,1-.71-.71V20.62A.7.7,0,0,1,188.27,19.91Z"></path><path class="cls-1-footer" d="M220.54,39.55c-9.49,0-19.09,6.72-19.09,19.57,0,11.29,8.21,19.81,19.09,19.81s19.17-8.52,19.17-19.81S231.47,39.55,220.54,39.55Zm10.53,19.57c0,6.52-4.53,11.44-10.53,11.44S210.1,65.64,210.1,59.12s4.49-11.2,10.44-11.2S231.07,52.73,231.07,59.12Z"></path><path class="cls-1-footer" d="M278.3,40.37h-7.16a.7.7,0,0,0-.71.7v19c0,7.42-5.12,10.05-9.51,10.05-3.88,0-7.79-2.93-7.79-9.48V41.07a.7.7,0,0,0-.71-.7h-7.16a.7.7,0,0,0-.7.7v20.5c0,11.25,5.09,17.44,14.34,17.44,3.36,0,8.8-1.93,10.84-6.19l.69.14V77.4a.71.71,0,0,0,.71.71h7.16a.71.71,0,0,0,.71-.71V41.07A.7.7,0,0,0,278.3,40.37Z"></path><path class="cls-1-footer" d="M322.27,19.91H315.1a.7.7,0,0,0-.7.71V46l-.44-.7c-2.18-3.51-6.87-5.78-11.95-5.78-8.76,0-17.62,6.75-17.62,19.65,0,11.25,7.61,19.73,17.69,19.73,3.84,0,9.25-1.54,11.88-5.86l.44-.72V77.4a.7.7,0,0,0,.7.71h7.17a.7.7,0,0,0,.7-.71V20.62A.7.7,0,0,0,322.27,19.91Zm-8,39.21a11,11,0,0,1-10.75,11.36c-5.86,0-10.45-5-10.45-11.36s4.59-11.2,10.45-11.2A11,11,0,0,1,314.24,59.12Z"></path><path class="cls-1-footer" d="M333,40.37h7.16a.7.7,0,0,1,.7.7V77.4a.7.7,0,0,1-.7.7H333a.71.71,0,0,1-.71-.71V41.07A.71.71,0,0,1,333,40.37Z"></path><path class="cls-1-footer" d="M336.61,21.06a5.57,5.57,0,0,0-5.69,5.57,5.64,5.64,0,0,0,5.69,5.58,5.54,5.54,0,0,0,5.61-5.58A5.48,5.48,0,0,0,336.61,21.06Z"></path><path class="cls-1-footer" d="M370.35,39.55c-3.14,0-8.72,1.69-10.85,6.19l-.69-.14V41.07a.7.7,0,0,0-.71-.7h-7.16a.7.7,0,0,0-.7.7V77.4a.7.7,0,0,0,.7.71h7.16a.71.71,0,0,0,.71-.71v-19c0-7.36,5.12-10,9.51-10,3.88,0,7.79,2.91,7.79,9.4V77.4a.71.71,0,0,0,.71.71H384a.71.71,0,0,0,.71-.71V56.91C384.69,45.72,379.59,39.55,370.35,39.55Z"></path><path class="cls-1-footer" d="M427.48,40.37h-7.16a.7.7,0,0,0-.71.7v5l-.43-.7c-2.19-3.51-6.88-5.78-12-5.78-8.75,0-17.62,6.75-17.62,19.65,0,11.25,7.61,19.73,17.7,19.73,3.83,0,9.24-1.54,11.88-5.86l.43-.72V77.4a.71.71,0,0,0,.71.71h7.16a.7.7,0,0,0,.7-.71V41.07A.7.7,0,0,0,427.48,40.37Zm-8,18.75A11,11,0,0,1,408.7,70.48c-5.86,0-10.44-5-10.44-11.36s4.58-11.2,10.44-11.2A11,11,0,0,1,419.46,59.12Z"></path><path class="cls-1-footer" d="M460.15,40.5a13.66,13.66,0,0,0-5.14-1c-4.76,0-8.22,2.85-10,8.25l-.64-.09V41.07a.7.7,0,0,0-.71-.7h-7.16a.7.7,0,0,0-.71.7V77.4a.71.71,0,0,0,.71.71h7.24a.7.7,0,0,0,.7-.71V65c0-14.8,5.91-17,9.44-17a11,11,0,0,1,4.33.9.72.72,0,0,0,.61,0,.7.7,0,0,0,.36-.48l1.42-7.11A.71.71,0,0,0,460.15,40.5Z"></path><path class="cls-1-footer" d="M499.88,40.68a.69.69,0,0,0-.59-.31h-7.71a.72.72,0,0,0-.66.45L481.59,65l-9.42-24.18a.72.72,0,0,0-.66-.45h-7.86a.69.69,0,0,0-.58.31.7.7,0,0,0-.07.66l14,34.38-7.73,20.09a.71.71,0,0,0,.66,1h7.5a.69.69,0,0,0,.65-.45l21.86-55A.69.69,0,0,0,499.88,40.68Z"></path><path class="cls-1-footer" d="M97.91,28.11A40.38,40.38,0,0,0,59.73,0,39.62,39.62,0,0,0,24.6,20.87a29.88,29.88,0,0,0-7.21,56.56l.75.34h.05v-8.5a22.29,22.29,0,0,1,9.29-41.16l2.1-.22L30.5,26A32.15,32.15,0,0,1,59.73,7.57a32.7,32.7,0,0,1,31.55,25L92,35.43l3,0a18.53,18.53,0,0,1,18.15,18.46c0,7.05-4.07,12.82-11,15.74v8.06l.5-.16c11.14-3.65,18.06-12.71,18.06-23.64A26.19,26.19,0,0,0,97.91,28.11Z"></path><path class="cls-1-footer" d="M45.07,76.79l1.66,1.66a.33.33,0,0,1-.23.56H33.4a6,6,0,0,1-6-6V47.57a.33.33,0,0,0-.33-.33H24.27a.33.33,0,0,1-.24-.56L35.15,35.56a.33.33,0,0,1,.47,0L46.73,46.68a.33.33,0,0,1-.23.56H43.66a.34.34,0,0,0-.34.33v25A6,6,0,0,0,45.07,76.79Z"></path><path class="cls-1-footer" d="M69.64,76.79l1.67,1.66a.33.33,0,0,1-.24.56H58a6,6,0,0,1-6-6V54a.34.34,0,0,0-.33-.34H48.84a.33.33,0,0,1-.23-.56L59.72,42a.33.33,0,0,1,.47,0L71.31,53.08a.33.33,0,0,1-.24.56H68.23a.34.34,0,0,0-.33.34V72.57A6,6,0,0,0,69.64,76.79Z"></path><path class="cls-1-footer" d="M94.22,76.79l1.66,1.66a.33.33,0,0,1-.23.56H82.54a6,6,0,0,1-6-6V60.38a.33.33,0,0,0-.33-.33H73.41a.33.33,0,0,1-.23-.57L84.3,48.37a.32.32,0,0,1,.46,0L95.88,59.48a.33.33,0,0,1-.23.57H92.8a.33.33,0,0,0-.33.33V72.57A6,6,0,0,0,94.22,76.79Z"></path></g></g></svg>
+               </a>
+            </div>
+                      <div class="col">
+              <nav class="widget_text footer-nav"><strong class="title">Products</strong><div class="textwidget custom-html-widget"><ul>
+<li><a href="/products/programmable_media" onclick="dataLayer.push({'event': 'event to GA','eventCategory': 'website footer menu','eventAction': 'navigate','eventLabel': 'Programmable Media'})">Programmable Media</a></li>
+	<li><a href="https://cloudinary.com/image-api">Image API</a></li>
+	<li><a href="/products/digital_asset_management" onclick="dataLayer.push({'event': 'event to GA','eventCategory': 'website footer menu','eventAction': 'navigate','eventLabel': 'DAM'})">DAM</a></li>
+<li><a href="/demos" onclick="dataLayer.push({'event': 'event to GA','eventCategory': 'website footer menu','eventAction': 'navigate','eventLabel': 'Demos'})">Demos</a></li>
+<li><a href="/pricing" onclick="dataLayer.push({'event': 'event to GA','eventCategory': 'website footer menu','eventAction': 'navigate','eventLabel': 'Pricing'})">Pricing</a></li>
+<li><a href="/faq" onclick="dataLayer.push({'event': 'event to GA','eventCategory': 'website footer menu','eventAction': 'navigate','eventLabel': 'FAQ'})">FAQ</a></li>
+</ul></div></nav>           </div>
+                                 <div class="col">
+              <nav class="widget_text footer-nav"><strong class="title">Solutions</strong><div class="textwidget custom-html-widget"><ul>
+
+	<li><a href="/video_api" onclick="dataLayer.push({'event': 'event to GA','eventCategory': 'website footer menu','eventAction': 'navigate','eventLabel': 'Video API'})">Video API</a></li>
+<li><a href="/solutions/ecommerce" onclick="dataLayer.push({'event': 'event to GA','eventCategory': 'website footer menu','eventAction': 'navigate','eventLabel': 'E-commerce'})">E-commerce</a></li>
+	<li><a href="/solutions/retail" onclick="dataLayer.push({'event': 'event to GA','eventCategory': 'website footer menu','eventAction': 'navigate','eventLabel': 'Retail'})">Retail</a></li>
+<li><a href="/solutions/industries/media_entertainment" onclick="dataLayer.push({'event': 'event to GA','eventCategory': 'website footer menu','eventAction': 'navigate','eventLabel': 'Media & Entertainment'})">Media &amp; Entertainment</a></li>
+<li><a href="/solutions/industries/travel_hospitality" onclick="dataLayer.push({'event': 'event to GA','eventCategory': 'website footer menu','eventAction': 'navigate','eventLabel': 'Travel & Hospitality'})">Travel &amp; Hospitality</a></li>
+<li><a href="/solutions/industries/cloudinary-for-nonprofits" onclick="dataLayer.push({'event': 'event to GA','eventCategory': 'website footer menu','eventAction': 'navigate','eventLabel': 'Non-Profits'})">Non-Profits</a></li>
+<li><a href="/customers" onclick="dataLayer.push({'event': 'event to GA','eventCategory': 'website footer menu','eventAction': 'navigate','eventLabel': 'Our Customers'})">Our Customers</a></li>
+<li><a href="/resources" onclick="dataLayer.push({'event': 'event to GA','eventCategory': 'website footer menu','eventAction': 'navigate','eventLabel': 'Resource Library'})">Resource Library</a></li>
+</ul></div></nav>           </div>
+                                 <div class="col">
+              <nav class="widget_text footer-nav"><strong class="title">Developers</strong><div class="textwidget custom-html-widget"><ul>
+<li><a href="https://cloudinary.com/developers" onclick="dataLayer.push({'event': 'event to GA','eventCategory': 'website footer menu','eventAction': 'navigate','eventLabel': 'Getting Started'})">Getting Started</a></li>
+<li><a href="/documentation" onclick="dataLayer.push({'event': 'event to GA','eventCategory': 'website footer menu','eventAction': 'navigate','eventLabel': 'Documentation'})">Documentation</a></li>
+<li><a href="https://community.cloudinary.com/">Community</a></li>	
+<li><a href="/documentation/cloudinary_sdks" onclick="dataLayer.push({'event': 'event to GA','eventCategory': 'website footer menu','eventAction': 'navigate','eventLabel': 'SDKs'})">SDKs</a></li>
+<li><a href="/addons" onclick="dataLayer.push({'event': 'event to GA','eventCategory': 'website footer menu','eventAction': 'navigate','eventLabel': 'Add-Ons'})">Add-Ons</a></li>
+	<li><a href="/podcasts" onclick="dataLayer.push({'event': 'event to GA','eventCategory': 'website footer menu','eventAction': 'navigate','eventLabel': 'Podcasts'})">Podcasts</a></li>
+</ul></div></nav>           </div>
+                                 <div class="col">
+              <nav class="widget_text footer-nav"><strong class="title">Company</strong><div class="textwidget custom-html-widget"><ul>
+<li><a href="/about" onclick="dataLayer.push({'event': 'event to GA','eventCategory': 'website footer menu','eventAction': 'navigate','eventLabel': 'About Us'})">About Us</a></li>
+<li><a href="/customers" onclick="dataLayer.push({'event': 'event to GA','eventCategory': 'website footer menu','eventAction': 'navigate','eventLabel': 'Customers'})">Customers</a></li>
+<li><a href="/partners" onclick="dataLayer.push({'event': 'event to GA','eventCategory': 'website footer menu','eventAction': 'navigate','eventLabel': 'Partners'})">Partners</a></li>
+<li><a href="/events" onclick="dataLayer.push({'event': 'event to GA','eventCategory': 'website footer menu','eventAction': 'navigate','eventLabel': 'Events'})">Events</a></li>
+<li><a href="/careers" onclick="dataLayer.push({'event': 'event to GA','eventCategory': 'website footer menu','eventAction': 'navigate','eventLabel': 'Careers'})">Careers</a></li>
+<li><a href="/newsroom" onclick="dataLayer.push({'event': 'event to GA','eventCategory': 'website footer menu','eventAction': 'navigate','eventLabel': 'Newsroom'})">Newsroom</a></li>
+<li><a href="https://cloudinary.com/blog/" onclick="dataLayer.push({'event': 'event to GA','eventCategory': 'website footer menu','eventAction': 'navigate','eventLabel': 'Blog'})">Blog</a></li>
+<li><a href="/trust" onclick="dataLayer.push({'event': 'event to GA','eventCategory': 'website footer menu','eventAction': 'navigate','eventLabel': 'Trust'})">Trust</a></li>
+</ul></div></nav>           </div>
+                                 <div class="col">
+              <nav class="widget_text footer-nav"><strong class="title">Contact Us</strong><div class="textwidget custom-html-widget"><ul>
+<li><a href="https://support.cloudinary.com/hc/en-us" onclick="dataLayer.push({'event': 'event to GA','eventCategory': 'website footer menu','eventAction': 'navigate','eventLabel': 'Technical Support">Technical Support</a></li>
+<li><a href="/contact" onclick="dataLayer.push({'event': 'event to GA','eventCategory': 'website footer menu','eventAction': 'navigate','eventLabel': 'Contact Sales'})">Contact Sales</a></li>
+<li><a href="https://training.cloudinary.com/" onclick="dataLayer.push({'event': 'event to GA','eventCategory': 'website footer menu','eventAction': 'navigate','eventLabel': 'Education & Training'})">Education &amp; Training</a></li>
+</ul></div></nav><nav class="widget_text footer-nav"><div class="textwidget custom-html-widget"><ul class='social-networks'>
+<li><a href="https://twitter.com/cloudinary" aria-label="Twitter page" class="twitter" data-popup="true" onclick="dataLayer.push({'event': 'event to GA','eventCategory': 'website footer menu','eventAction': 'external navigation','eventLabel': 'Twitter'})"><svg alt="twitter icon" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" width="15" height="16"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a></li>
+<li><a href="https://www.linkedin.com/company/cloudinary/" class="linkedin" aria-label="Linkedin page" data-popup="true" onclick="dataLayer.push({'event': 'event to GA','eventCategory': 'website footer menu','eventAction': 'external navigation','eventLabel': 'LinkedIn'})"><svg alt="linkedin icon" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" class="svg-inline--fa fa-linkedin-in fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" width="14" height="16"><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg></a></li>
+<li><a href="https://www.facebook.com/Cloudinary" class="facebook" aria-label="Facebook page" alt="facebook icon" data-popup="true" onclick="dataLayer.push({'event': 'event to GA','eventCategory': 'website footer menu','eventAction': 'external navigation','eventLabel': 'Facebook'})"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 320 512" width="9" height="16"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg></a></li>
+<li><a href="https://www.instagram.com/cloudinarylife" class="instagram" aria-label="Instagram page" data-popup="true" onclick="dataLayer.push({'event': 'event to GA','eventCategory': 'website footer menu','eventAction': 'external navigation','eventLabel': 'Instagram'})"><svg alt="instagram icon" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" width="14" height="16" class="svg-inline--fa fa-instagram fa-w-14 fa-2x"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" class=""></path></svg></a></li>
+<li>
+	<a href="https://www.youtube.com/@Cloudinary" class="instagram" aria-label="Youtube page" data-popup="true">
+		<svg version="1.1" class="svg-inline--fa fa-instagram fa-w-14 fa-2x"  x="0px" y="0px" viewbox="0 0 159 110" style="width: 15px"><path fill="currentColor" class="st0" d="M154,17.5c-1.8-6.7-7.1-12-13.8-13.8c-9-3.5-96.6-5.2-122,0.1c-6.7,1.8-12,7.1-13.8,13.8
+	C0.3,35.5,0,74.2,4.5,92.5c1.8,6.7,7.1,12,13.8,13.8c17.9,4.1,103,4.7,122,0c6.7-1.8,12-7.1,13.8-13.8C158.5,73,158.8,36.7,154,17.5
+	z M64.2,78.4V31.6L105,55L64.2,78.4z"/></svg>
+	</a>
+</li>
+
+</ul></div></nav>           </div>
+                                 <div class="col">
+              <div class="widget_text footer-nav"><div class="textwidget custom-html-widget"><div class="footer-seals">
+<ul>
+<li><img src="https://cloudinary-res.cloudinary.com/image/upload/b_rgb:0C163B,c_scale,f_auto,q_auto,w_76,dpr_auto/v1563215041/website/seals/L_ISO_27001_2013_E.png" class="lazyload" width="76" height="76" alt="Institute of Quality & Control" loading="lazy"/></li>
+<li><img src="https://cloudinary-res.cloudinary.com/image/upload/b_rgb:0C163B,c_scale,f_auto,q_auto,w_76,dpr_auto/v1563215041/website/seals/GDPR.png" class="lazyload" width="76" height="76" alt="GDPR" loading="lazy"/></li>
+<li><img src="https://cloudinary-res.cloudinary.com/image/upload/b_rgb:0C163B,c_scale,f_auto,q_auto,w_76,dpr_auto/v1563215041/website/seals/21972-312_SOC_NonCPA.png" class="lazyload" width="76" height="76" alt="SOC" loading="lazy"/></li>
+</ul>
+</div></div></div>           </div>
+                    </div>
+       </div>
+     </div>
+   </div>
+   <div class="footer-bot">
+     <div class="container-fluid">
+       <div class="row footer-frame">
+                    <div class="col-xs-12 col-sm-6">
+              <div class="widget_text footer-nav"><div class="textwidget custom-html-widget"></div></div>           </div>
+                   <div class="col-xs-12 col-sm-6">
+             <ul class="footer-links">
+                <li><a href="/tou" onclick="dataLayer.push({'event': 'event to GA','eventCategory': 'website footer menu','eventAction': 'navigate','eventLabel': 'Terms of Use'})">Terms of Use</a></li>
+                <li><a href="/privacy" onclick="dataLayer.push({'event': 'event to GA','eventCategory': 'website footer menu','eventAction': 'navigate','eventLabel': 'Privacy Policy'})">Privacy Policy</a></li>
+                <li><a href="/dmca" onclick="dataLayer.push({'event': 'event to GA','eventCategory': 'website footer menu','eventAction': 'navigate','eventLabel': 'DMCA Notice'})">DMCA Notice</a></li>
+             </ul>
+             <div class="copyright">
+                <p>&copy; 2024 Cloudinary. All rights reserved.</p>
+             </div>
+          </div>
+       </div>
+     </div>
+   </div>
+</footer>
+
+</div>
+<link rel='preload' as='style' id='inter-font-css' href='https://cloudinary.com/wp-content/themes/cld-2021/assets/2022/fonts/inter/inter.css?ver=1.0.0' media='all' />
+<link rel='stylesheet' id='inter-font-css' href='https://cloudinary.com/wp-content/themes/cld-2021/assets/2022/fonts/inter/inter.css?ver=1.0.0' media="print" onload="this.media='all'" />
+<script type="text/javascript" defer src="https://cloudinary.com/wp-content/themes/cld-2021/assets/js/bootstrap.min.js?ver=4.3.1" id="bootstrap-js-js"></script>
+<script type="text/javascript" defer src="https://cloudinary.com/wp-content/themes/cld-2021/assets/js/cloudinary-core-shrinkwrap.min.js?ver=1.0.0" id="shrinkwrap-js"></script>
+<script type="text/javascript" defer src="https://cloudinary.com/wp-content/themes/cld-2021/assets/js/owl.carousel.234.min.js?ver=2.2.0" id="owl-js-js"></script>
+<script type="text/javascript" defer src="https://cloudinary.com/wp-content/themes/cld-2021/assets/js/picturefill.min.js?ver=3.0.2" id="picturefill-js"></script>
+<script type="text/javascript" defer src="https://cloudinary.com/wp-content/themes/cld-2021/assets/js/lazysizes.min.js?ver=5.1.1" id="lazysizes-js"></script>
+<script type="text/javascript" defer src="https://cloudinary.com/wp-content/themes/cld-2021/assets/js/fancybox.min.js?ver=3.5.7" id="fancybox-js-js"></script>
+<script type="text/javascript" defer src="https://cloudinary.com/wp-content/themes/cld-2021/assets/js/alert-bar.js?ver=1.0.0" id="alert-js-js"></script>
+<script type="text/javascript" defer src="https://cloudinary.com/wp-content/themes/cld-2021/assets/js/search.js?ver=1.0.1" id="search-js-js"></script>
+<script type="text/javascript" defer src="https://cloudinary.com/wp-content/themes/cld-2021/assets/js/mobile-menu.js?ver=1.0.1" id="mobile-menu-js-js"></script>
+<script type="text/javascript" defer src="https://cloudinary.com/wp-content/themes/cld-2021/assets/js/scripts.js?ver=1.0.4" id="scripts-js-js"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8ead1367e9cf54ec',t:'MTczMjk5MzE3OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
