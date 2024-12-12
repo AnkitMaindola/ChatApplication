@@ -7,6 +7,7 @@ import Login from './components/Login';
 
 function App() {
 
+
   const router = createBrowserRouter([
     {
       path:"/",
@@ -22,7 +23,7 @@ function App() {
     }
   ])
   return (
-    <div className="App bg-gray-200 h-screen ">
+    <div className="App  h-screen " >
       <RouterProvider router={router}/>
 
 {/* <button className="btn btn-active btn-ghost">Ghost</button> */}

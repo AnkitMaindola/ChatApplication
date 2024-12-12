@@ -4,12 +4,11 @@
 
 
 body {
-  background-size: cover;
+  background-size: cover; /* Ensure the image covers the entire viewport */
   background-position: center;
   background-repeat: no-repeat;
-
-  
-  margin: 0;
+  height: 100vh; /* Optional: Ensure it covers the viewport */
+  margin: 0; 
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
