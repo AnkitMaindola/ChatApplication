@@ -1,21 +1,19 @@
 import React, { useState } from "react";
-import { Link ,useNavigate} from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { setAuthUser } from "../redux/userSlice";
 import { useDispatch, useSelector } from "react-redux";
 
 function Login() {
-  const [user,setUser] = useState({
-    username : "",
-    password : "",
-  })
+  const [user, setUser] = useState({
+    username: "",
+    password: "",
+  });
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const authUser = useSelector((state) => state.user.authUser);
-  console.log(authUser,"auth user");
-  
-
+  console.log(authUser, "auth user");
 
   const onSubmitHandler = async (e) => {
     e.preventDefault();
@@ -32,14 +30,14 @@ function Login() {
       );
       if (res) {
         console.log(res);
-        dispatch(setAuthUser(res.data))
+        dispatch(setAuthUser(res.data));
         navigate("/");
 
         toast.success("Logged in sucessfully");
       }
     } catch (error) {
       console.log(error);
-      
+
       // console.log(error.response.data.message);
       // toast.error(error.response.data.message)
     }
@@ -57,7 +55,7 @@ function Login() {
               className="w-full input input-bordered h-10"
               type="text"
               placeholder="User Name"
-              onChange={(e)=> setUser({...user, username : e.target.value}) }
+              onChange={(e) => setUser({ ...user, username: e.target.value })}
             />
           </div>
           <div>
@@ -68,12 +66,19 @@ function Login() {
               className="w-full input input-bordered h-10"
               type="password"
               placeholder="Password"
-              onChange={(e)=> setUser({...user, password : e.target.value}) }
+              onChange={(e) => setUser({ ...user, password: e.target.value })}
             />
           </div>
-          <p className='text-center my-2'>Already have an account? <Link to="/signup"> Sign up </Link></p>
+          <p className="text-center my-2">
+            Already have an account? <Link to="/signup"> Sign up </Link>
+          </p>
           <div>
-            <button type='submit' className='btn btn-block btn-sm mt-2 border border-slate-700'>Login</button>
+            <button
+              type="submit"
+              className="btn btn-block btn-sm mt-2 border border-slate-700"
+            >
+              Login
+            </button>
           </div>
         </form>
       </div>

@@ -4,6 +4,7 @@ import App from "./App";
 import { Toaster } from "react-hot-toast";
 import { Provider } from "react-redux";
 
+
 import "./index.css"; // Ensure the path is correct
 import store from "./redux/store";
 
