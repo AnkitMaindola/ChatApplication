@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link ,useNavigate} from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
+import { setAuthUser } from "../redux/userSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 function Login() {
   const [user,setUser] = useState({
@@ -9,6 +11,12 @@ function Login() {
     password : "",
   })
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const authUser = useSelector((state) => state.user.authUser);
+  console.log(authUser,"auth user");
+  
+
+
   const onSubmitHandler = async (e) => {
     e.preventDefault();
     try {
@@ -24,12 +32,16 @@ function Login() {
       );
       if (res) {
         console.log(res);
+        dispatch(setAuthUser(res.data))
         navigate("/");
+
         toast.success("Logged in sucessfully");
       }
     } catch (error) {
-      console.log(error.response.data.message);
-      toast.error(error.response.data.message)
+      console.log(error);
+      
+      // console.log(error.response.data.message);
+      // toast.error(error.response.data.message)
     }
   };
   return (
