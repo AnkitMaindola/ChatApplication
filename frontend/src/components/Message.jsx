@@ -3,7 +3,7 @@ import React from 'react'
 function Message() {
   return (
     <div>
-        <div className="chat chat-start">
+        {/* <div className="chat chat-start">
   <div className="chat-image avatar">
     <div className="w-10 rounded-full">
       <img
@@ -12,7 +12,7 @@ function Message() {
     </div>
   </div>
   <div className="chat-bubble">It was said that you would, destroy the Sith, not join them.</div>
-</div>
+</div> */}
 <div className="chat chat-end">
   <div className="chat-image avatar">
     <div className="w-10 rounded-full">
@@ -23,7 +23,7 @@ function Message() {
   </div>
   <div className="chat-bubble">It was you who would bring balance to the Force</div>
 </div>
-<div className="chat chat-start">
+{/* <div className="chat chat-start">
   <div className="chat-image avatar">
     <div className="w-10 rounded-full">
       <img
@@ -32,7 +32,7 @@ function Message() {
     </div>
   </div>
   <div className="chat-bubble">Not leave it in Darkness</div>
-</div>
+</div> */}
     </div>
   )
 }

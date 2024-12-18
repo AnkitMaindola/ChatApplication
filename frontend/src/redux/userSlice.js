@@ -4,7 +4,8 @@ const userSlice = createSlice({
   name: "user",
   initialState: {
     authUser: null,
-    otherUsers : null
+    otherUsers : null,
+    selectedUser : null 
   },
   reducers: {
     setAuthUser: (state, action) => {
@@ -13,9 +14,12 @@ const userSlice = createSlice({
     setotherUsers: (state, action) => {
       state.otherUsers = action.payload;
     },
+    setSelectedUser : (state,action) => {
+      state.selectedUser = action.payload
+    }
   },
 });
 
 // Correctly export the action
-export const { setAuthUser,setotherUsers } = userSlice.actions;
+export const { setAuthUser,setotherUsers,setSelectedUser } = userSlice.actions;
 export default userSlice.reducer;
