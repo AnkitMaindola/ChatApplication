@@ -5,20 +5,38 @@ import Signup from './components/SIgnup';
 import Login from './components/Login';
 import "./index.css"; // Ensure the path is correct
 import { useEffect, useState } from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import io from "socket.io-client"
+import { setSocket } from './redux/socketSlice';
+import { setOnlineUsers } from './redux/userSlice';
 
 
 
 function App() {
   const {authUser} = useSelector((store)=> store.user);
-  const [socket,setSocket] = useState();
+  const {socket} = useSelector((store)=> store.socket);
+  const dispatch = useDispatch();
   useEffect(()=>{
     if(authUser){
-      const socket = io('http://localhost:8000',{
-
+      const socketio = io('http://localhost:8000',{
+        query : {
+          userId : authUser.id
+        }
       })
-      setSocket(socket)
+      console.log(socketio,"socket xncsksdjnejkwnkjek");    
+      dispatch(()=>setSocket(socketio))
+      socketio.emit('getOnlineUsers',(onlineUser) => {
+        console.log(onlineUser,"online user");
+        dispatch(()=> setOnlineUsers(onlineUser))
+      })
+      return ()=> socketio.close();
+
+    }
+    else {
+      if(socket){
+        socket.close();
+        dispatch(()=> setSocket(null))
+      }
     }
 
   },[authUser])
